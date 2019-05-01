@@ -1,0 +1,150 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+body {
+ font-family: 'Montserrat', sans-serif;
+ background-color:#f6f6f6;
+ cursor: pointer;
+ overflow-x: hidden;
+}
+
+@font-face {
+    font-family: 'gilroy-extrabold';
+    src: url('Font/gilroy-extrabold-webfont.woff2') format('woff2'),
+         url('Font/gilroy-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin:4vw 0;
+  font-size:5vw;
+  font-family: 'gilroy-extrabold';
+  font-weight:bold;
+
+}
+
+p{
+ font-size:1.2vw;
+}
+
+button {
+  font-size:0.8rem;
+  border-style: none;
+  text-align:left;
+  background-color:#f6f6f6;
+  margin:0px 30px;
+  padding-top:4vh;
+}
+
+button:focus {outline:0;}
+button:hover {
+   transform:scale(1.1);
+}
+
+summary {
+  font-family: 'gilroy-extrabold';
+  font-weight:bold;
+  color:black;
+  font-size:0.8rem;
+}
+
+summary:focus{outline:0;}
+
+summary:hover {
+  color:#113ffa;
+}
+
+details p{
+  font-size:0.6rem;
+}
+
+a:link {
+  color:#113ffa;
+  text-decoration: underline;
+}
+
+a:visited {
+  color:#113ffa;
+  text-decoration: none;
+}
+
+.description {
+  position:fixed;
+  z-index:-1;
+  padding-left:50px;
+}
+
+.images {
+  z-index:20;
+  padding-left:8vw;
+}
+
+ .images img{
+  margin:10px;
+}
+
+.invisible {
+  display:none;
+}
+
+.break {
+  opacity:0;
+}
+
+.arrow {
+  position: fixed;
+  bottom: 2em;
+  left: 2em;
+  display: block;
+  text-align: right;
+  text-decoration: none;
+  z-index: 200;
+  width: 3rem;
+  transition: transform 0.4s;
+}
+
+.arrow.up {
+    transform: rotate( 180deg );
+}
+
+.arrow.blue svg polygon {
+  fill: #113ffa;
+}
+
+.footer {
+  font-family: 'gilroy-extrabold';
+  font-weight:bold;
+  font-size:1rem;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height:12vh;
+  background-color: #f6f6f6;
+  box-shadow: 0 0 5px 5px #f6f6f6;
+  text-align: center;
+  z-index:100;
+}
+
+#contact {
+  text-align:center;
+}
+
+#nom {
+  /*transform-origin: 0 0;
+  transform: rotate(-5deg);*/
+  margin-top:35vh;
+  margin-left:20vw;
+  text-align:center;
+
+}
+
+#scene3d {
+  width: 300px;
+  height: 300px;
+  background: red;
+}
