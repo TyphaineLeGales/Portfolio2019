@@ -10,6 +10,7 @@ body {
 }
 
 #wrapper {
+position:relative;
  overflow-x: hidden;
 
 }
@@ -31,7 +32,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p{
- font-size:1.2vw;
+ font-size: calc(8px + 1vw);
 }
 
 button {
@@ -43,7 +44,10 @@ button {
   padding-top:4vh;
 }
 
-button:focus {outline:0;}
+button:focus {
+  outline:0;
+}
+
 button:hover {
    transform:scale(1.1);
 }
@@ -150,4 +154,11 @@ a:visited {
   width: 300px;
   height: 300px;
   background: red;
+}
+
+#language {
+  position:fixed;
+  width: 10vw;
+  top: 4em;
+  left: 3em;"
 }
