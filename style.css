@@ -1,65 +1,70 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   p{
- font-size: 3vw;
+ font-size: 3.2vw;
   }
 #language {
   position:fixed;
   top: 2em;
   left: 1em;"
 }
+h1, h2, h3, h4, h5, h6 {
+  margin:4vw 0;
+  font-size:12vw;
+  font-family: 'gilroy-extrabold';
+  font-weight:bold;
+}
+
+.images img {
+    margin:30px;
+  }
+
 }
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   p{
- font-size: 3vw;
+ font-size: 2vw;
 }
 #language {
   position:fixed;
   top: 2em;
   left: 1em;"
 }
-
+h1, h2, h3, h4, h5, h6 {
+  margin:4vw 0;
+  font-size:10vw;
+  font-family: 'gilroy-extrabold';
+  font-weight:bold;
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  p{
- font-size: 1.3vw;
-}
-#language {
-  position:fixed;
-  top: 4em;
-  left: 3em;"
-}
+.images img {
+    margin:20px;
+  }
+
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   p{
- font-size: 1.3vw;
+   font-size: 1.3vw;
+  }
+  #language {
+    position:fixed;
+    top: 4em;
+    left: 3em;"
+  }
+  h1, h2, h3, h4, h5, h6 {
+    margin:4vw 0;
+    font-size:5vw;
+    font-family: 'gilroy-extrabold';
+    font-weight:bold;
+  }
+  .images img {
+    margin:10px;
+  }
 }
-#language {
-  position:fixed;
-  top: 4em;
-  left: 3em;"
-}
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  p{
- font-size: 1.3vw;
-}
-#language {
-  position:fixed;
-  top: 4em;
-  left: 3em;"
-}
-}
-
 
 
 ::-webkit-scrollbar {
@@ -87,13 +92,6 @@ position:relative;
 
 }
 
-h1, h2, h3, h4, h5, h6 {
-  margin:4vw 0;
-  font-size:5vw;
-  font-family: 'gilroy-extrabold';
-  font-weight:bold;
-
-}
 
 
 button {
@@ -148,12 +146,10 @@ a:visited {
 
 .images {
   z-index:20;
-  padding-left:8vw;
+  margin-left:8vw;
 }
 
- .images img{
-  margin:10px;
-}
+
 
 .invisible {
   display:none;
