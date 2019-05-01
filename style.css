@@ -49,13 +49,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p{
- font-size: calc(8px + 1vw);
+ font-size: 1.3vw;
 }
 
 button {
-  font-family: 'gilroy-extrabold';
-  font-weight:bold;
-  font-size:1.3rem;
+  font-size:0.8rem;
   border-style: none;
   text-align:left;
   background-color:#f6f6f6;
@@ -102,7 +100,6 @@ a:visited {
   position:fixed;
   z-index:-1;
   padding-left:50px;
-  min-width:50px;
 }
 
 .images {
@@ -143,7 +140,9 @@ a:visited {
 }
 
 .footer {
-
+  font-family: 'gilroy-extrabold';
+  font-weight:bold;
+  font-size:1rem;
   position: fixed;
   left: 0;
   bottom: 0;
