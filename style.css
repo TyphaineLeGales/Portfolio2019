@@ -53,7 +53,9 @@ p{
 }
 
 button {
-  font-size:0.8rem;
+  font-family: 'gilroy-extrabold';
+  font-weight:bold;
+  font-size:1.3rem;
   border-style: none;
   text-align:left;
   background-color:#f6f6f6;
@@ -141,9 +143,7 @@ a:visited {
 }
 
 .footer {
-  font-family: 'gilroy-extrabold';
-  font-weight:bold;
-  font-size:1rem;
+
   position: fixed;
   left: 0;
   bottom: 0;
