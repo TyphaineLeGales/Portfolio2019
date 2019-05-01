@@ -7,9 +7,12 @@ body {
  font-family: 'Montserrat', sans-serif;
  background-color:#f6f6f6;
  cursor: pointer;
- overflow-x: hidden;
 }
 
+#wrapper {
+ overflow-x: hidden;
+
+}
 @font-face {
     font-family: 'gilroy-extrabold';
     src: url('Font/gilroy-extrabold-webfont.woff2') format('woff2'),
