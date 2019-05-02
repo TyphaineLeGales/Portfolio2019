@@ -27,8 +27,8 @@ h1, h2, h3, h4, h5, h6 {
 
   .arrow {
   position: fixed;
-  bottom: 1em;
-  left: 0.5em;
+  bottom: 1vh;
+  left: 2vw;
   display: block;
   text-align: right;
   text-decoration: none;
@@ -42,9 +42,9 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'gilroy-extrabold';
   position: fixed;
   left: 4.7em;
-  bottom: 1em;
+  bottom: 0vw;
   width: 80vh;
-  height:10vh;
+  height:4em;
   text-align: center;
   z-index:100;
   }
@@ -87,8 +87,8 @@ h1, h2, h3, h4, h5, h6 {
 }
   .arrow {
   position: fixed;
-  bottom: 2em;
-  left: 0.5em;
+  bottom: 1vh;
+  left: 2vw;
   display: block;
   text-align: right;
   text-decoration: none;
@@ -97,25 +97,26 @@ h1, h2, h3, h4, h5, h6 {
   transition: transform 0.4s;
 }
   .footer {
-  transform-origin: bottom left;
-  transform: rotate(-90deg);
   font-family: 'gilroy-extrabold';
+  font-weight:bold;
+  font-size:1rem;
   position: fixed;
-  left: 4.7em;
-  bottom: 1.2em;
-  width: 80vh;
-  height:10vh;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height:6vh;
+  background-color: #f6f6f6;
+  box-shadow: 0 0 5px 5px #f6f6f6;
   text-align: center;
   z-index:100;
   }
 
   button {
-  font-size:0.7rem;
+  font-size:0.8rem;
   border-style: none;
   text-align:left;
   background-color:#f6f6f6;
 }
-
 
 }
 
