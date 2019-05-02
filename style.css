@@ -40,18 +40,17 @@ h1, h2, h3, h4, h5, h6 {
   transform-origin: bottom left;
   transform: rotate(-90deg);
   font-family: 'gilroy-extrabold';
-  font-size:1rem;
   position: fixed;
   left: 4.7em;
-  bottom: 1.2em;
-  width: 93vh;
+  bottom: 1em;
+  width: 80vh;
   height:10vh;
   text-align: center;
   z-index:100;
   }
 
   button {
-  font-size:0.8rem;
+  font-size:0.7rem;
   border-style: none;
   text-align:left;
   background-color:#f6f6f6;
@@ -101,18 +100,17 @@ h1, h2, h3, h4, h5, h6 {
   transform-origin: bottom left;
   transform: rotate(-90deg);
   font-family: 'gilroy-extrabold';
-  font-size:1rem;
   position: fixed;
   left: 4.7em;
   bottom: 1.2em;
-  width: 93vh;
+  width: 80vh;
   height:10vh;
   text-align: center;
   z-index:100;
   }
 
   button {
-  font-size:0.8rem;
+  font-size:0.7rem;
   border-style: none;
   text-align:left;
   background-color:#f6f6f6;
