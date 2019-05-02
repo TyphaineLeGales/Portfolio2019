@@ -8,6 +8,12 @@
   top: 2em;
   left: 1em;
 }
+
+.images {
+  z-index:20;
+  margin-left:8vw;
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin:4vw 0;
   font-size:12vw;
@@ -18,6 +24,7 @@ h1, h2, h3, h4, h5, h6 {
 .images img {
     margin:30px 4vw;
   }
+
 
 }
 
@@ -43,6 +50,12 @@ h1, h2, h3, h4, h5, h6 {
     margin:20px 4vw;
   }
 
+  .images {
+  z-index:20;
+  margin-left:8vw;
+}
+
+
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -64,6 +77,12 @@ h1, h2, h3, h4, h5, h6 {
   .images img {
     margin:10px 4vw;
   }
+
+  .images {
+  z-index:20;
+  margin-left:5vw;
+}
+
 }
 
 
@@ -142,11 +161,6 @@ a:visited {
   position:fixed;
   z-index:-1;
   padding-left:50px;
-}
-
-.images {
-  z-index:20;
-  margin-left:8vw;
 }
 
 
