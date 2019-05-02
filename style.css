@@ -24,6 +24,18 @@ h1, h2, h3, h4, h5, h6 {
 .images img {
     margin:30px 4vw;
   }
+   .arrow {
+  transform:scale(0.5);
+  position: fixed;
+  bottom: 1em;
+  left: 0.5em;
+  display: block;
+  text-align: right;
+  text-decoration: none;
+  z-index: 200;
+  width: 3rem;
+  transition: transform 0.4s;
+}
 
 
 }
@@ -54,6 +66,18 @@ h1, h2, h3, h4, h5, h6 {
   z-index:20;
   margin-left:8vw;
 }
+  .arrow {
+  transform:scale(0.5);
+  position: fixed;
+  bottom: 2em;
+  left: 2em;
+  display: block;
+  text-align: right;
+  text-decoration: none;
+  z-index: 200;
+  width: 3rem;
+  transition: transform 0.4s;
+}
 
 
 }
@@ -81,6 +105,18 @@ h1, h2, h3, h4, h5, h6 {
   .images {
   z-index:20;
   margin-left:5vw;
+}
+  .arrow {
+  transform:scale(1);
+  position: fixed;
+  bottom: 2em;
+  left: 2em;
+  display: block;
+  text-align: right;
+  text-decoration: none;
+  z-index: 200;
+  width: 3rem;
+  transition: transform 0.4s;
 }
 
 }
@@ -171,18 +207,6 @@ a:visited {
 
 .break {
   opacity:0;
-}
-
-.arrow {
-  position: fixed;
-  bottom: 2em;
-  left: 2em;
-  display: block;
-  text-align: right;
-  text-decoration: none;
-  z-index: 200;
-  width: 3rem;
-  transition: transform 0.4s;
 }
 
 .arrow.up {
