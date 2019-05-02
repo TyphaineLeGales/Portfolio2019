@@ -27,8 +27,8 @@ h1, h2, h3, h4, h5, h6 {
 
   .arrow {
   position: fixed;
-  bottom: 1vh;
-  left: 2vw;
+  bottom: 0.5em;
+  left: 0.7em;
   display: block;
   text-align: right;
   text-decoration: none;
@@ -42,7 +42,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'gilroy-extrabold';
   position: fixed;
   left: 4.7em;
-  bottom: 0vw;
+  bottom: 10vw;
   width: 80vh;
   height:4em;
   text-align: center;
