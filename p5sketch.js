@@ -2,7 +2,7 @@ p5.disableFriendlyErrors = true;
 
 y=0;
 var img;
-var vScale=4;
+var vScale=5;
 var vehicles=[];
 var font;
 function preload() {
