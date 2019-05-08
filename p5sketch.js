@@ -2,7 +2,7 @@ p5.disableFriendlyErrors = true;
 
 y=0;
 var img;
-var vScale=5;
+var vScale=6;
 var vehicles=[];
 var font;
 function preload() {
@@ -25,7 +25,7 @@ function setup() {
         var b = img.pixels[index+2];
 
         var brightness = (r+g+b)/3;
-        var vehicle = new Vehicle(x*4, y*4, vScale/1.8, brightness);
+        var vehicle = new Vehicle(x*4, y*4, vScale/3, brightness);
         vehicles.push(vehicle);
       }
     }
