@@ -309,6 +309,11 @@ a:visited {
   height: 300px;
   background: red;
 }
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
 
 
 
