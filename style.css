@@ -61,7 +61,10 @@ h1, h2, h3, h4, h5, h6 {
   margin-top:48vh;
 }
 #p5Canvas {
-    margin-top:-1vh;
+    display:none;
+  }
+  #p5CanvasMobile {
+    display:block;
   }
 
 }
@@ -131,7 +134,12 @@ h1, h2, h3, h4, h5, h6 {
   #p5Canvas {
     margin-left:2em;
     margin-top:10vh;
+    display:none;
   }
+   #p5CanvasMobile {
+    display:block;
+  }
+
 
 
 }
@@ -200,6 +208,13 @@ h1, h2, h3, h4, h5, h6 {
   #showAbout {
   margin-top:30vh;
 }
+#p5Canvas {
+  display:block;
+  }
+ #p5CanvasMobile {
+    display:none;
+  }
+
 
 
 }
@@ -302,17 +317,6 @@ a:visited {
   padding-left:5vw;
   text-align:left;
 
-}
-
-#scene3d {
-  width: 300px;
-  height: 300px;
-  background: red;
-}
-.vcenter {
-    display: inline-block;
-    vertical-align: middle;
-    float: none;
 }
 
 
