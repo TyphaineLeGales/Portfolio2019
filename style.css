@@ -58,7 +58,7 @@ h1, h2, h3, h4, h5, h6 {
     margin:10px;
   }
    #showAbout {
-  margin-top:46vh;
+  margin-top:30vh;
 }
 #p5Canvas {
     display:none;
@@ -129,7 +129,7 @@ h1, h2, h3, h4, h5, h6 {
     left: 3em;
   }
   #showAbout {
-  margin-top:46vh;
+  margin-top:30vh;
 }
   #p5Canvas {
     margin-left:2em;
