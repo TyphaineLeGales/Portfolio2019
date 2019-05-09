@@ -60,13 +60,10 @@ h1, h2, h3, h4, h5, h6 {
    #showAbout {
   margin-top:30vh;
 }
-#p5Canvas {
-    display:none;
-  }
   #p5CanvasMobile {
-    display:block;
+    padding-left:2em;
+    margin-top:20vh;
   }
-
 }
 
 
@@ -131,14 +128,11 @@ h1, h2, h3, h4, h5, h6 {
   #showAbout {
   margin-top:30vh;
 }
-  #p5Canvas {
-    margin-left:2em;
-    margin-top:10vh;
-    display:none;
-  }
    #p5CanvasMobile {
-    display:block;
+    padding-left:2em;
+    margin-top:20vh;
   }
+
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -203,16 +197,12 @@ h1, h2, h3, h4, h5, h6 {
     left: 3em;
   }
   #showAbout {
-  margin-top:14vh;
+  margin-top:18vh;
 }
-#p5Canvas {
-  display:block;
+   #p5CanvasMobile {
+    padding-left:2em;
+    margin-top:18vh;
   }
- #p5CanvasMobile {
-    display:none;
-  }
-
-
 
 }
 
