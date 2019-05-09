@@ -1,21 +1,25 @@
 function francais() {
   var en = document.querySelectorAll('.en');
   var fr = document.querySelectorAll('.fr');
-  en.forEach(function(element) {
-    element.classList.add('invisible');
-  });
-  fr.forEach(function(element) {
-    element.classList.remove('invisible');
-  });
+
+  for(var i=0; i< en.length; i++){
+     en[i].classList.add('invisible');
+  }
+
+  for(var j=0; j< fr.length; j++){
+     fr[j].classList.remove('invisible');
+  }
 }
 
 function english() {
   var en = document.querySelectorAll('.en');
   var fr = document.querySelectorAll('.fr');
-  en.forEach(function(element) {
-    element.classList.remove('invisible');
-  });
-  fr.forEach(function(element) {
-    element.classList.add('invisible');
-  });
+
+   for(var i=0; i< en.length; i++){
+     en[i].classList.remove('invisible');
+  }
+
+  for(var j=0; j< fr.length; j++){
+     fr[j].classList.add('invisible');
+  }
 }
