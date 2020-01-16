@@ -10,6 +10,9 @@
   <script src="language.js"></script>
 </head>
 <body>
+  <div class="loader">
+      <p>This is loading please wait</p>
+  </div>
   <div id="wrapper">
     <a href="#end" class="arrow">
       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -27,7 +30,7 @@
       <button onclick="document.getElementById('section1').scrollIntoView({behavior: 'smooth', block: 'start'});">Coding Type</button>
       <button onclick="document.getElementById('sectionFurby').scrollIntoView({behavior: 'smooth', block: 'start'});">Internet Of Toys</button>
       <button onclick="document.getElementById('section2').scrollIntoView({behavior:'smooth', block: 'start'});">Sticky Business</button>
-      <button onclick="document.getElementById('section3').scrollIntoView({behavior: 'smooth', block: 'start'});">Rebranding D.O.T.</button>
+      <button onclick="document.getElementById('section3').scrollIntoView({behavior: 'smooth', block: 'start'});">Generative Print</button>
       <button onclick="document.getElementById('section4').scrollIntoView({behavior: 'smooth', block: 'start'});">Web Works</button>
       <button onclick="document.getElementById('end').scrollIntoView({behavior: 'smooth', block: 'start'});">Contact</button>
     </div>
@@ -35,6 +38,14 @@
       <div id="landing" style="padding-left:8vw;" class=" row">
         <div id="p5CanvasMobile" class="description">
           <img src="assets/photoMobile.png" width="50%" alt="">
+        </div>
+      </div>
+      <div id= 'digitalSpaceTxt' class="description invisible row">
+        <div class="text col-11 col-sm-6">
+          <h1 class="en"> Web Work </h1>
+          <h1 class="fr invisible"> Web </h1>
+          <p class="en"> From webdesign to bio-inspired procedural animations, I like to explore various type of technologies and workflows to create interesting visuals and interactions.  </p>
+          <p class="fr invisible"> L'utilisation de WebGL permettant de développer des experiences interactives en 3D directement dans le browser ouvre de nombreuses possibilités. Ces quelques exemples illustrent le début de ma familiarisation avec Three.js, une librairie javascript pour la 3d sur le web.  </p>
         </div>
       </div>
       <div id ="typeTxt" class="description row invisible">
@@ -69,8 +80,8 @@
 
       <div id ="dotTxt" class="description invisible row">
         <div class="text col-11 col-sm-6">
-          <h1 class="en">Rebranding D.O.T.</h1>
-          <h1 class="fr invisible"> Rebranding D.O.T.</h1>
+          <h1 class="en">Generative Print</h1>
+          <h1 class="fr invisible"> Impressions Generative</h1>
           <p class="en">This proposal for a rebranding of the US department of Transportation is based on the concept of empowering people through information. As the main actor of connectivity in the US, the department of transportation is an entity everyone experience on a daily basis. Putting an emphasis on data and interactivity throughout the brand development aims at engaging people to experience D.O.T. in a bigger scale and from a environmental, economical and social angle. Motion and interactivity with the brand wishes to rejuvenate the image of the department of transport and encourage people to get more involved in such matters. </p>
           <p class="fr invisible">
           L'élaboration d'une nouvelle charte graphique pour le département américain des transports s'est construite autour de la visualisation des datas générés par les différents type déplacements à travers le territoire : transit des citoyens, transportation maritimes des marchandises, traffic aérien etc... <br>
@@ -79,14 +90,7 @@
         </div>
       </div>
 
-      <div id= 'digitalSpaceTxt' class="description invisible row">
-        <div class="text col-11 col-sm-6">
-          <h1 class="en"> Web </h1>
-          <h1 class="fr invisible"> Web </h1>
-          <p class="en"> From webdesign to bio-inspired procedural animations, I like to explore various type of technologies and workflows to create interesting visuals and interactions.  </p>
-          <p class="fr invisible"> L'utilisation de WebGL permettant de développer des experiences interactives en 3D directement dans le browser ouvre de nombreuses possibilités. Ces quelques exemples illustrent le début de ma familiarisation avec Three.js, une librairie javascript pour la 3d sur le web.  </p>
-        </div>
-      </div>
+
       <div id="contact" class="invisible description row" style="z-index:300;margin-top:15vh;">
         <div class="col-0 col-sm-2"></div>
         <div class="col-10 col-sm-6">
@@ -183,7 +187,7 @@
           <div class="row">
             <div class="col-0 col-md-7"></div>
             <div class="col-11 col-md-5">
-             <video controls = "true" width="100%">
+             <video style="margin-top:6rem;" controls = "true" width="100%">
                <source src="assets/Furby/FinalVideo_1.mp4"
             type="video/mp4">
              </video>
@@ -200,23 +204,24 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-0 col-md-8"></div>
+            <div class="col-0 col-md-3"> </div>
+              <div  class="col-0 col-md-2">
+                <video controls = "true" width="80%">
+                  <source src="assets/Furby/videoFurbyTalking.mp4" type="video/mp4">
+                </video>
+              </div>
             <div class="col-5 col-md-2">
-
-             <!--  <img style = "margin-top:-50px"src="assets/Furby/FurbyEndterms1.png" alt="" width='80%' > -->
-             <video controls = "true" width="100%">
-               <source src="assets/Furby/videoFurbyTalking.mp4" type="video/mp4">
-             </video>
+              <video controls = "true" width="80%">
+                <source src="assets/Furby/videoEndterms.mp4" type="video/mp4">
+              </video>
             </div>
-            <div class="col-5 col-md-2">
-               <video controls = "true" width="100%">
-               <source src="assets/Furby/videoEndterms.mp4" type="video/mp4">
-             </video>
+            <div style = "padding:55px;"class="col-5 col-md-3">
+               <img src="assets/Furby/FurbyElectronics2.jpg" alt="" width=70%>
             </div>
           </div>
           <div class="row">
             <div class="col-10 col-md-6">
-              <img src="assets/Furby/Autopsy.jpg" width="100%" alt="">
+              <img src="assets/Furby/Autopsy.jpg" width="102%" alt="">
             </div>
           </div>
         </div>
@@ -331,7 +336,7 @@
           <div class="row">
             <div class="col-0 col-md-4"></div>
             <div class="col-11 col-md-5">
-                <p style="background-color: #ffffff; border-style: solid; border-color: #113ffa; text-align:center">You can click on the sites to experience them live</p>
+                <p style="background-color: #ffffff; border-style: solid; border-color: #113ffa; text-align:center;margin-top:5rem;">You can click on the sites to experience them live</p>
             </div>
           </div>
           <div class="row">
@@ -340,24 +345,24 @@
                 <img src="assets/maxmara.gif" width='100%'alt="">
               </a>
             </div>
-            <div class="col-0 col-md-6">
+            <div class="col-10 col-md-6">
                <a href="https://free-dompodcast.org/" style="margin-top:-100px">
                 <img src="assets/FreeDom.gif" width="100%"alt="">
               </a>
             </div>
           </div>
           <div class="row">
-            <div class="col-0 col-md-2" >
-              <img src="assets/Tracking.gif" width="105%"alt="">
+            <div class="col-10 col-md-2" >
+              <img src="assets/Tracking.gif" width="100%"alt="">
             </div>
-            <div class="col-10 col-md-6">
+            <div class="col-10 col-md-5">
               <a href="https://typhainelegales.github.io/Font_project/">
                 <img src="assets/font.gif" width="100%"alt="">
               </a>
             </div>
-            <div class="col-10 col-md-4">
-              <a href="https://editor.p5js.org/tlegales/sketches/BysV49XjX">
-                <img src="assets/BrowserPiano.png" width="100%" alt="">
+            <div class="col-10 col-md-5">
+              <a href="http://fairesonbeurre.info/">
+                <img src="assets/FaireSonBeurre.gif" width="100%" alt="">
               </a>
             </div>
           </div>

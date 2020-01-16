@@ -49,21 +49,21 @@ document.addEventListener('DOMContentLoaded', function() {
       black([buttons[0],buttons[1], buttons[2], buttons[3],buttons[4]]);
       arrow[0].classList.remove('up', 'blue');
       arrow[0].setAttribute("href", "#end");
-   } else if(-showType.clientHeight < project1.offsetTop- window.scrollY-350) {
+   } else if(-showType.clientHeight < project1.offsetTop- window.scrollY) {
       invisible([landing, food, dSpace, dot, contact, furby]);
       type.classList.remove('invisible');
       black([buttons[1], buttons[2], buttons[3],buttons[4]]);
       buttons[0].style.color="#113ffa";
-    } else if(-showFurby.clientHeight < projectFurby.offsetTop- window.scrollY+250 ){
+    } else if(-showFurby.clientHeight < projectFurby.offsetTop- window.scrollY ){
       invisible([landing, food, dSpace, dot, contact, type]);
       furby.classList.remove('invisible');
 
-    } else if (-showFood.clientHeight < project2.offsetTop- window.scrollY-350){
+    } else if (-showFood.clientHeight < project2.offsetTop- window.scrollY){
       invisible([landing, type, dSpace, dot, contact, furby]);
       food.classList.remove('invisible');
       black([buttons[0], buttons[2], buttons[3],buttons[4]]);
       buttons[1].style.color="#113ffa";
-    } else if(-showDOT.clientHeight < project3.offsetTop- window.scrollY+250) {
+    } else if(-showDOT.clientHeight < project3.offsetTop- window.scrollY) {
       invisible([landing, type, dSpace, food, contact, furby]);
       dot.classList.remove('invisible');
       black([buttons[0], buttons[1], buttons[3],buttons[4]]);
