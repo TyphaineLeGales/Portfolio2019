@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
       food.classList.remove('invisible');
       black([buttons[0], buttons[2], buttons[3],buttons[4]]);
       buttons[1].style.color="#113ffa";
-    } else if(-showDOT.clientHeight < project3.offsetTop- window.scrollY) {
+    } else if(-showDOT.clientHeight < project3.offsetTop- window.scrollY + 1550) {
       invisible([landing, type, dSpace, food, contact, furby]);
       dot.classList.remove('invisible');
       black([buttons[0], buttons[1], buttons[3],buttons[4]]);
