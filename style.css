@@ -80,7 +80,6 @@ h1, h2, h4, h5, h6 {
 }
 
 h1, h2, h4, h5, h6 {
-  margin:4vw 0;
   font-size:10vw;
   font-family: 'gilroy-extrabold';
   font-weight:bold;
@@ -144,11 +143,12 @@ h1, h2, h4, h5, h6 {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   p{
-   font-size: 3em;
+   font-size: 2em;
   }
 
   h1, h2, h4, h5, h6 {
     text-align: left;
+    margin-top:2em;
     font-size:2em;
     font-family: 'gilroy-extrabold';
     font-weight:bold;
@@ -209,25 +209,27 @@ h1, h2, h4, h5, h6 {
    #p5CanvasMobile {
     margin-top:9.8em;
   }
+
   .name {
 
-  left:10.5em;
+  left:11em;
   text-align:center;
-  font-size:3em;
+  font-size:2.5em;
   line-height: 1.5em;
-
   }
 
-  #nom {
-    margin-top:6em;
-  }
+ /* #nom {
+    margin-top:7.4em;
+  }*/
 
   #prenom {
-    margin-top:4em;
+    margin-top:5.1em;
   }
 
   #showAbout p {
     font-size : 4em;
+    color:#1B1E1C;
+    mix-blend-mode: screen;
   }
 
 }
@@ -283,7 +285,7 @@ summary {
   font-family: 'gilroy-extrabold';
   font-weight:bold;
   color:black;
-  font-size:0.3rem;
+  font-size:0.5rem;
 }
 
 summary:focus{outline:0;}
@@ -318,6 +320,11 @@ mark {
   text-align:left;
 }
 
+.description p {
+  padding:1em;
+  margin-top:2em;
+
+}
 .invisible {
   display:none;
 }
@@ -337,6 +344,15 @@ mark {
 
 #contact {
   text-align:center;
+}
+
+.floatingP {
+  background-color: #ffffff;
+  border-style: solid;
+  border-color: #113ffa;
+  padding:35px;
+  margin-top:-50px;
+  font-size:1em;
 }
 
 
