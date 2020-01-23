@@ -9,7 +9,7 @@
   margin-left:8vw;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h4, h5, h6 {
   margin:4vw 0;
   font-size:12vw;
   font-family: 'gilroy-extrabold';
@@ -58,7 +58,7 @@ h1, h2, h3, h4, h5, h6 {
     margin:10px;
   }
    #showAbout {
-  margin-top:30vh;
+  margin-top:25em;
 }
   #p5CanvasMobile {
     padding-left:2em;
@@ -79,7 +79,7 @@ h1, h2, h3, h4, h5, h6 {
  font-size: 4em;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h4, h5, h6 {
   margin:4vw 0;
   font-size:10vw;
   font-family: 'gilroy-extrabold';
@@ -144,34 +144,33 @@ h1, h2, h3, h4, h5, h6 {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   p{
-   font-size: 4em;
+   font-size: 3em;
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    margin:4vw 0;
+  h1, h2, h4, h5, h6 {
     text-align: left;
-    font-size:5vw;
+    font-size:2em;
     font-family: 'gilroy-extrabold';
     font-weight:bold;
   }
   .images img {
-    margin:10px 4vw;
+    margin:10px 1em;
   }
 
   .images {
   z-index:20;
-  margin-left:5vw;
+  margin-left:4em;
   }
 
   .arrow {
   position: fixed;
   bottom: 2em;
-  left: 2em;
+  left: 1em;
   display: block;
   text-align: right;
   text-decoration: none;
   z-index: 200;
-  width: 3rem;
+  width: 2rem;
   transition: transform 0.4s;
   }
   .footer {
@@ -201,22 +200,35 @@ h1, h2, h3, h4, h5, h6 {
   #language {
     position:fixed;
     top: 4em;
-    left: 3em;
+    left: 2em;
   }
   #showAbout {
   margin-top:5vh;
   text-align:center;
 }
    #p5CanvasMobile {
-    margin-top:12vh;
+    margin-top:9.8em;
   }
-  #nom {
-  margin-top:4em;
+  .name {
+
+  left:10.5em;
   text-align:center;
-  font-size:2em;
+  font-size:3em;
+  line-height: 1.5em;
 
+  }
 
-}
+  #nom {
+    margin-top:6em;
+  }
+
+  #prenom {
+    margin-top:4em;
+  }
+
+  #showAbout p {
+    font-size : 4em;
+  }
 
 }
 
@@ -227,7 +239,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 body {
- font-family: 'Athelas Regular';
+ font-family: 'Playfair Display';
  background-color:#f6f6f6;
  cursor: pointer;
 }
@@ -271,7 +283,7 @@ summary {
   font-family: 'gilroy-extrabold';
   font-weight:bold;
   color:black;
-  font-size:0.4rem;
+  font-size:0.3rem;
 }
 
 summary:focus{outline:0;}
@@ -303,7 +315,7 @@ mark {
 .description {
   position:fixed;
   z-index:-1;
-  padding-left:50px;
+  text-align:left;
 }
 
 .invisible {

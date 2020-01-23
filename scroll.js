@@ -82,8 +82,10 @@ document.addEventListener('DOMContentLoaded', function() {
       buttons[4].style.color="#113ffa";
     }
 
-    var nom = document.getElementById('nom');
-    nom.style.top = `${window.scrollY }px`;
+    var nom = document.getElementById('prenom');
+    var prenom= document.getElementById('nom');
+    prenom.style.top = `${window.scrollY/2.2}px`;
+    nom.style.top = `${window.scrollY/2.2}px`;
   });
 }, false);
 
