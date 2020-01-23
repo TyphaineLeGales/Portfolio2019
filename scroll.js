@@ -81,6 +81,9 @@ document.addEventListener('DOMContentLoaded', function() {
       black([buttons[0], buttons[1], buttons[2], buttons[3]]);
       buttons[4].style.color="#113ffa";
     }
+
+    var nom = document.getElementById('nom');
+    nom.style.top = `${window.scrollY }px`;
   });
 }, false);
 

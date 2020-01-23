@@ -64,13 +64,19 @@ h1, h2, h3, h4, h5, h6 {
     padding-left:2em;
     margin-top:20vh;
   }
+
+  #nom {
+
+  text-align:left;
+  padding-left:0.4em;
+}
 }
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   p{
- font-size: 2vw;
+ font-size: 4em;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -138,11 +144,12 @@ h1, h2, h3, h4, h5, h6 {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   p{
-   font-size: 1.3vw;
+   font-size: 4em;
   }
 
   h1, h2, h3, h4, h5, h6 {
     margin:4vw 0;
+    text-align: left;
     font-size:5vw;
     font-family: 'gilroy-extrabold';
     font-weight:bold;
@@ -198,11 +205,18 @@ h1, h2, h3, h4, h5, h6 {
   }
   #showAbout {
   margin-top:5vh;
+  text-align:center;
 }
    #p5CanvasMobile {
-    padding-left:2em;
     margin-top:12vh;
   }
+  #nom {
+  margin-top:4em;
+  text-align:center;
+  font-size:2em;
+
+
+}
 
 }
 
@@ -213,7 +227,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 body {
- font-family: 'Montserrat', sans-serif;
+ font-family: 'Athelas Regular';
  background-color:#f6f6f6;
  cursor: pointer;
 }
@@ -233,6 +247,13 @@ position:relative;
 
 }
 
+@font-face {
+font-family: 'Athelas Regular';
+font-style: normal;
+font-weight: normal;
+src: url(Font/'Athelas-Regular.woff') format('woff');
+}
+
 .loader {
   position : fixed;
   z-index : 99;
@@ -250,7 +271,7 @@ summary {
   font-family: 'gilroy-extrabold';
   font-weight:bold;
   color:black;
-  font-size:0.8rem;
+  font-size:0.4rem;
 }
 
 summary:focus{outline:0;}
@@ -270,6 +291,12 @@ a:link {
 
 a:visited {
   color:#113ffa;
+  text-decoration: none;
+}
+
+mark {
+  font-weight: bold;
+  background-color: #f6f6f6;
   text-decoration: none;
 }
 
@@ -300,10 +327,7 @@ a:visited {
   text-align:center;
 }
 
-#nom {
-  padding-left:5vw;
-  text-align:left;
-}
+
 
 
 
