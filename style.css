@@ -131,10 +131,8 @@ h1, h2, h4, h5, h6 {
     left: 3em;
   }
   #showAbout {
-  margin-top:30vh;
 }
    #p5CanvasMobile {
-    padding-left:2em;
     margin-top:20vh;
   }
 
@@ -148,7 +146,6 @@ h1, h2, h4, h5, h6 {
 
   h1, h2, h4, h5, h6 {
     text-align: left;
-    margin-top:2em;
     font-size:2em;
     font-family: 'gilroy-extrabold';
     font-weight:bold;
@@ -203,34 +200,41 @@ h1, h2, h4, h5, h6 {
     left: 2em;
   }
   #showAbout {
-  margin-top:5vh;
   text-align:center;
 }
    #p5CanvasMobile {
-    margin-top:9.8em;
+    margin-top:6.5em;
+    z-index:1;
+    padding-left:23em;
+
   }
 
-  .name {
-
-  left:11em;
-  text-align:center;
-  font-size:2.5em;
-  line-height: 1.5em;
-  }
-
- /* #nom {
-    margin-top:7.4em;
-  }*/
 
   #prenom {
-    margin-top:5.1em;
+    margin-top:19.6em;
+    font-family : 'Playfair Display';
+    font-weight: black ;
+    font-size:1em;
+    left:34em;
+
   }
 
   #showAbout p {
     font-size : 4em;
     color:#1B1E1C;
     mix-blend-mode: screen;
+   z-index:10;
+
   }
+
+  .title {
+    font-family: 'Playfair Display';
+    font-weight:normal;
+    font-size:9em;
+    z-index:50;
+    line-height:0.9;
+  }
+
 
 }
 
@@ -243,7 +247,7 @@ h1, h2, h4, h5, h6 {
 body {
  font-family: 'Playfair Display';
  background-color:#f6f6f6;
- cursor: pointer;
+/* cursor: pointer;*/
 }
 
 
@@ -259,13 +263,6 @@ position:relative;
     font-weight: normal;
     font-style: normal;
 
-}
-
-@font-face {
-font-family: 'Athelas Regular';
-font-style: normal;
-font-weight: normal;
-src: url(Font/'Athelas-Regular.woff') format('woff');
 }
 
 .loader {
@@ -308,11 +305,6 @@ a:visited {
   text-decoration: none;
 }
 
-mark {
-  font-weight: bold;
-  background-color: #f6f6f6;
-  text-decoration: none;
-}
 
 .description {
   position:fixed;
@@ -320,11 +312,6 @@ mark {
   text-align:left;
 }
 
-.description p {
-  padding:1em;
-  margin-top:2em;
-
-}
 .invisible {
   display:none;
 }
@@ -354,8 +341,6 @@ mark {
   margin-top:-50px;
   font-size:1em;
 }
-
-
 
 
 

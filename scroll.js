@@ -83,8 +83,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // var nom = document.getElementById('prenom');
-    var prenom= document.getElementById('prenom');
-    prenom.style.top = `${window.scrollY/2.2}px`;
+    var portrait= document.getElementById('p5CanvasMobile');
+    portrait.style.top = `${window.scrollY/2}px`;
     // nom.style.top = `${window.scrollY/2.2}px`;
   });
 }, false);
