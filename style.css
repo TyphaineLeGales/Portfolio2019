@@ -338,13 +338,14 @@ a:visited {
 }
 
 .floatingP {
-  background-color: #ffffff;
-  border-style: solid;
-  border-color: #113ffa;
-  padding:35px;
+  padding:25px;
   margin-top:-50px;
   font-size:1em;
   text-align:center;
+}
+
+li {
+  list-style-type: none;
 }
 
 
