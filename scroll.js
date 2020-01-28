@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var portrait= document.getElementById('p5CanvasMobile');
     portrait.style.top = `${window.scrollY/4}px`;
     nom.style.opacity = `${window.scrollY/showAbout.clientHeight}`;
-    maskDiv.style.width = `${100-(window.scrollY/showType.clientHeight*50)}%`;
+    maskDiv.style.width = `${110-(window.scrollY/showType.clientHeight*52)}%`;
     console.log(window.scrollY/showType.clientHeight);
   });
 }, false);
