@@ -203,7 +203,7 @@ h1, h2, h4, h5, h6 {
   text-align:center;
 }
    #p5CanvasMobile {
-    margin-top:5em;
+    margin-top:11em;
     z-index:1;
     padding-left:23em;
 
@@ -211,18 +211,19 @@ h1, h2, h4, h5, h6 {
 
 
   #prenom {
-    margin-top:17.8em;
+    margin-top:2em;
     font-family : 'Playfair Display';
     font-weight: black ;
-    font-size:1em;
-    left:33.5em;
+    font-size:6em;
+    left:2em;
+    color:black;
+    opacity:0;
 
   }
 
   #showAbout p {
     font-size : 4em;
     color:#1B1E1C;
-    mix-blend-mode: screen;
    z-index:10;
 
   }
@@ -233,7 +234,7 @@ h1, h2, h4, h5, h6 {
     font-size:9em;
     z-index:50;
     line-height:0.9;
-    animation-duration: 1s;
+    animation-duration: 0.8s;
     animation-name: pop;
   }
 
@@ -352,7 +353,26 @@ li {
 
 @keyframes pop {
   from {
-    margin-top: -30%;
+    margin-top: 20%;
+    opacity:0;
+
+  }
+
+  to {
+    margin-top: 0%;
+    opacity:1;
+  }
+}
+
+.showImg img{
+   animation-duration: 0.2s;
+  animation-name: pop;
+
+}
+
+@keyframes pop {
+  from {
+    margin-top: 20%;
     opacity:0;
 
   }

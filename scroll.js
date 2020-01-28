@@ -82,10 +82,11 @@ document.addEventListener('DOMContentLoaded', function() {
       buttons[4].style.color="#113ffa";
     }
 
-    // var nom = document.getElementById('prenom');
+    var nom = document.getElementById('prenom');
+    var section1 = document.getElementById('section1');
     var portrait= document.getElementById('p5CanvasMobile');
-    portrait.style.top = `${window.scrollY/2}px`;
-    // nom.style.top = `${window.scrollY/2.2}px`;
+    portrait.style.top = `${window.scrollY/4}px`;
+    nom.style.opacity = `${window.scrollY/showAbout.clientHeight}`;
   });
 }, false);
 
