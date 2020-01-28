@@ -228,7 +228,7 @@ h1, h2, h4, h5, h6 {
 
   }
 
-  .title {
+  .projectTitle{
     font-family: 'Playfair Display';
     font-weight:normal;
     font-size:9em;
@@ -236,6 +236,20 @@ h1, h2, h4, h5, h6 {
     line-height:0.9;
     animation-duration: 0.8s;
     animation-name: pop;
+    text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
+    position:relative;
+    color: #f6f6f6;
+  }
+
+  .maskDivTitle {
+    background-color:black;
+    position:absolute;
+    width:100%;
+    height:65%;
+    top:0;
+    left:0;
+    z-index:-10;
+    clip-path: url(#masking);
   }
 
   .description p {
@@ -382,6 +396,7 @@ li {
     opacity:1;
   }
 }
+
 
 
 

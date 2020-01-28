@@ -84,9 +84,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     var nom = document.getElementById('prenom');
     var section1 = document.getElementById('section1');
+    var maskDiv= document.getElementById('maskDivTitle1');
     var portrait= document.getElementById('p5CanvasMobile');
     portrait.style.top = `${window.scrollY/4}px`;
     nom.style.opacity = `${window.scrollY/showAbout.clientHeight}`;
+    maskDiv.style.width = `${100-(window.scrollY/showType.clientHeight*50)}%`;
+    console.log(window.scrollY/showType.clientHeight);
   });
 }, false);
 
