@@ -52,19 +52,19 @@ document.addEventListener('DOMContentLoaded', function() {
       arrow[0].setAttribute("href", "#end");
    } else if(-imgSection[1].clientHeight < sections[1].offsetTop- window.scrollY) {
       nav(1, descriptions, buttons);
-      SVGmaskHeader(masksHeader,1, sections, imgSection);
+      // SVGmaskHeader(masksHeader,1, sections, imgSection);
     } else if(-imgSection[2].clientHeight < sections[2].offsetTop- window.scrollY ){
       nav(2, descriptions, buttons);
-      SVGmaskHeader(masksHeader,2, sections, imgSection);
+      // SVGmaskHeader(masksHeader,2, sections, imgSection);
     } else if (-imgSection[3].clientHeight <sections[3].offsetTop- window.scrollY){
       nav(3, descriptions, buttons);
-      SVGmaskHeader(masksHeader,3, sections, imgSection);
+      // SVGmaskHeader(masksHeader,3, sections, imgSection);
     } else if(-imgSection[4].clientHeight < sections[4].offsetTop- window.scrollY ) {
       nav(4, descriptions, buttons);
-      SVGmaskHeader(masksHeader,4, sections, imgSection);
+      // SVGmaskHeader(masksHeader,4, sections, imgSection);
     } else if(-imgSection[5].clientHeight < sections[5].offsetTop- window.scrollY) {
       nav(5, descriptions, buttons);
-      SVGmaskHeader(masksHeader,5, sections, imgSection);
+      // SVGmaskHeader(masksHeader,5, sections, imgSection);
     } else if(-imgSection[6].clientHeight < sections[6].offsetTop- window.scrollY){
       nav(6, descriptions, buttons);
       arrow[0].classList.add('up', 'blue');

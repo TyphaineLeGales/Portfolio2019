@@ -242,7 +242,7 @@ h1, h2, h4, h5, h6 {
     line-height:0.9;
     animation-duration: 0.8s;
     animation-name: pop;
-    color: #f6f6f6;
+    color: black;
   }
 
   .maskDivTitle {
@@ -256,7 +256,7 @@ h1, h2, h4, h5, h6 {
   }
 
   #maskDivTitle1 {
-    clip-path: url(#masking1);
+    clip-path: url(main.html#masking1);
     -webkit-clip-path: url(#masking1);
   }
 
@@ -405,11 +405,13 @@ li {
 @keyframes pop {
   from {
     opacity:0;
+    margin-top:20%;
 
   }
 
   to {
     opacity:1;
+     margin-top:0%;
   }
 }
 
