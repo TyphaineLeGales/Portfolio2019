@@ -1,3 +1,4 @@
+
 function black (params){
    for (i=0; i<params.length; i++) {
       params[i].style.color="black";
@@ -10,8 +11,28 @@ function invisible (params){
   }
 }
 
+function map_range(value, low1, high1, low2, high2) {
+    return low2 + (high2 - low2) * (value - low1) / (high1 - low1);
+}
+
+function maskHeader () {
+
+}
+
+function nav (currIndex, descriptionArray) {
+  invisible(descriptionArray);
+  descriptionArray[currIndex].classList.remove('invisible');
+}
+
+
 document.addEventListener('DOMContentLoaded', function() {
   document.addEventListener('scroll', function(){
+
+  var descriptions = document.querySelectorAll("div.description");
+  var sections = document.querySelectorAll("div.section");
+  var imgSection = document.querySelectorAll("div.showImg");
+  // console.log(descriptions, sections, imgSection);
+
   var type = document.getElementById("typeTxt");
   var project1 = document.getElementById('section1');
   var showType = document.getElementById('showType');
@@ -42,10 +63,12 @@ document.addEventListener('DOMContentLoaded', function() {
   var contact = document.getElementById('contact');
   var showContact = document.getElementById('showContact');
   var end = document.getElementById('end');
-  // var end = document.getElementById('info');
+
+
    if( -showAbout.clientHeight< top.offsetTop- window.scrollY+200){
-      landing.classList.remove('invisible');
-      invisible([type, food, dSpace, dot, contact, furby]);
+      //landing.classList.remove('invisible');
+      //invisible([type, food, dSpace, dot, contact, furby]);
+      nav(0, descriptions);
       black([buttons[0],buttons[1], buttons[2], buttons[3],buttons[4]]);
       arrow[0].classList.remove('up', 'blue');
       arrow[0].setAttribute("href", "#end");
@@ -54,13 +77,15 @@ document.addEventListener('DOMContentLoaded', function() {
       type.classList.remove('invisible');
       black([buttons[1], buttons[2], buttons[3],buttons[4]]);
       buttons[0].style.color="#113ffa";
+      console.log(descriptions);
     } else if(-showFurby.clientHeight < projectFurby.offsetTop- window.scrollY ){
       invisible([landing, food, dSpace, dot, contact, type]);
       furby.classList.remove('invisible');
 
     } else if (-showFood.clientHeight < project2.offsetTop- window.scrollY){
-      invisible([landing, type, dSpace, dot, contact, furby]);
-      food.classList.remove('invisible');
+      // invisible([landing, type, dSpace, dot, contact, furby]);
+      // food.classList.remove('invisible');
+      nav(1, descriptions);
       black([buttons[0], buttons[2], buttons[3],buttons[4]]);
       buttons[1].style.color="#113ffa";
     } else if(-showDOT.clientHeight < project3.offsetTop- window.scrollY ) {
@@ -88,8 +113,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var portrait= document.getElementById('p5CanvasMobile');
     portrait.style.top = `${window.scrollY/4}px`;
     nom.style.opacity = `${window.scrollY/showAbout.clientHeight}`;
-    maskDiv.style.width = `${110-(window.scrollY/showType.clientHeight*52)}%`;
-    console.log(window.scrollY/showType.clientHeight);
+    maskDiv.style.width = `${map_range(window.scrollY -project1.offsetTop, 0,showType.clientHeight, 100, 0 )}%`;
   });
 }, false);
 

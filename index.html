@@ -35,32 +35,15 @@
       <button onclick="document.getElementById('end').scrollIntoView({behavior: 'smooth', block: 'start'});">Contact</button>
     </div>
     <div class="container">
-      <div id="landing" style="padding-left:8vw;" class=" row">
-        <div class="description">
-
-            <div id="p5CanvasMobile"  style="position:fixed;">
-              <img src="assets/photoMobile.png" width="28%" alt="">
-            </div>
+      <div id="landing" style="padding-left:8vw;" class="description row">
+        <div id="p5CanvasMobile"  style="position:fixed;">
+          <img src="assets/photoMobile.png" width="28%" alt="">
         </div>
-        <div class="description">
-          <div class="row">
-            <h2 id="prenom" class="description">Typhaine Le Galès</h2>
-          </div>
-         <!--  <div class="row">
-            <h2 id="nom" class="description name">Le Galès</h2>
-          </div> -->
-        </div>
-
-      </div>
-      <div id= 'digitalSpaceTxt' class="description invisible row">
-        <div class="text col-11 col-sm-6">
-          <h1 class="projectTitle"> Web Work </h1>
-          <p class="en"></p>
-          <p class="fr invisible">  </p>
+        <div class="row">
+          <h2 id="prenom">Typhaine Le Galès</h2>
         </div>
       </div>
       <div id ="typeTxt" class="description invisible">
-
         <div class="row">
           <div class="text col-11 col-md-6 sectionHeader">
             <!-- <h2 class="en projectTitle">CODING TYPE</h2> -->
@@ -122,6 +105,13 @@
         </div>
       </div>
 
+      <div id= 'digitalSpaceTxt' class="description invisible row">
+        <div class="text col-11 col-sm-6">
+          <h1 class="projectTitle"> Web Work </h1>
+          <p class="en"></p>
+          <p class="fr invisible">  </p>
+        </div>
+      </div>
 
       <div id="contact" class="invisible description">
         <div class="row" style="margin-top:8em;">
@@ -140,18 +130,15 @@
     </div>
 
     <div class="images container" >
-      <div id="top" class="row">
-        <div class="col-8 col-md-12">
-          <!-- <h2 id="nom">Typhaine Le Galès</h2> -->
-        </div>
-      <div id="showAbout">
-        <div class="row ">
-          <div class="col-10 col-md-12" >
-            <p class="en">I'm interested in creative coding, procedural approaches and open-source platforms as a design method to craft innovative interactive experiences, visualize systems and communicate information. </p>
-            <p class="fr invisible">Je m'intéresse au 'creative coding', le développement d'algorithmes a des fins expressives. Cette méthodologie ouvre de nouvelles possibilités dans les champs de la communication en permettant d'intégrer différents degrés d'interaction et de procéduralité.</p>
+      <div id="top" class="row section">
+        <div id="showAbout" class="showImg">
+          <div class="row ">
+            <div class="col-10 col-md-12" >
+              <p class="en">I'm interested in creative coding, procedural approaches and open-source platforms as a design method to craft innovative interactive experiences, visualize systems and communicate information. </p>
+              <p class="fr invisible">Je m'intéresse au 'creative coding', le développement d'algorithmes a des fins expressives. Cette méthodologie ouvre de nouvelles possibilités dans les champs de la communication en permettant d'intégrer différents degrés d'interaction et de procéduralité.</p>
+            </div>
           </div>
         </div>
-      </div>
         <div class="break">
           <div class="row">
             <div class="col-10 col-sm-8">
@@ -160,7 +147,7 @@
           </div>
         </div>
       </div>
-      <div id="section1">
+      <div id="section1" class="section">
         <div id = 'showType' class="showImg">
           <div class="row">
             <div class="col-3 col-sm-4"></div>
@@ -226,8 +213,8 @@
         </div>
       </div>
 
-      <div id ='sectionFurby'>
-        <div id = 'showFurby'  class="showImg">
+      <div id ='sectionFurby' class="section">
+        <div id = 'showFurby' class="showImg">
           <div class="row" >
             <div class="col-0 col-md-7"></div>
             <div class="col-11 col-md-5">
@@ -294,8 +281,8 @@
         </div>
       </div>
 
-      <div id="section2">
-        <div id="showFood">
+      <div id="section2" class="section">
+        <div id="showFood" class="showImg">
           <div class="row">
             <div class="col-0 col-md-6"></div>
             <div class="col-9 col-md-5">
@@ -353,7 +340,7 @@
           </div>
       </div>
 
-      <div id="section3">
+      <div id="section3" class='section'>
         <div id="showDOT"  class="showImg">
           <div class="row">
             <div class="col-5 col-md-7"></div>
@@ -389,8 +376,8 @@
           </div>
         </div>
       </div>
-      <div id="section4">
-        <div id="showDigital"  class="showImg">
+      <div id="section4" class="section">
+        <div id="showDigital" class="showImg">
           <div class="row">
             <div class="col-0 col-md-4" ></div>
             <div class="col-10 col-md-8">
@@ -455,7 +442,7 @@
         </div>
       </div>
       </div>
-      <div id="end">
+      <div id="end" class="section">
         <div id="showContact" class="showImg">
           <div class="row break">
             <div class="col-12 col-md-10">
