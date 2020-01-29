@@ -245,13 +245,38 @@ h1, h2, h4, h5, h6 {
     background-color:black;
     position:absolute;
     /*width:100%;*/
-    height:65%;
+    height:100%;
     top:0;
     left:0;
     z-index:10;
-    clip-path: url(#masking);
-    -webkit-clip-path: url(#masking);
   }
+
+  #maskDivTitle1 {
+    clip-path: url(#masking1);
+    -webkit-clip-path: url(#masking1);
+  }
+
+  #maskDivTitle2 {
+    clip-path: url(#masking2);
+    -webkit-clip-path: url(#masking2);
+  }
+
+   #maskDivTitle3 {
+    clip-path: url(#masking3);
+    -webkit-clip-path: url(#masking3);
+  }
+
+    #maskDivTitle4 {
+    clip-path: url(#masking4);
+    -webkit-clip-path: url(#masking4);
+  }
+
+      #maskDivTitle5 {
+    clip-path: url(#masking5);
+    -webkit-clip-path: url(#masking5);
+  }
+
+
 
   .description p {
     margin-top:1.5em;
@@ -371,24 +396,6 @@ li {
   list-style-type: none;
 }
 
-@keyframes pop {
-  from {
-    margin-top: 20%;
-    opacity:0;
-
-  }
-
-  to {
-    margin-top: 0%;
-    opacity:1;
-  }
-}
-
-.showImg img{
-   animation-duration: 0.2s;
-  animation-name: pop;
-
-}
 
 @keyframes pop {
   from {
@@ -406,6 +413,10 @@ li {
 .sectionHeader {
   animation-duration: 0.8s;
     animation-name: pop;
+}
+
+.twoLinerHeader {
+  margin-top:8em;
 }
 
 
