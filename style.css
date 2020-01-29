@@ -250,6 +250,7 @@ h1, h2, h4, h5, h6 {
     left:0;
     z-index:10;
     clip-path: url(#masking);
+    -webkit-clip-path: url(#masking);
   }
 
   .description p {
