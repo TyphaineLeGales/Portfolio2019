@@ -34,6 +34,7 @@
       <button onclick="document.getElementById('section4').scrollIntoView({behavior: 'smooth', block: 'start'});">Web Works</button>
       <button onclick="document.getElementById('end').scrollIntoView({behavior: 'smooth', block: 'start'});">Contact</button>
     </div>
+
     <div class="container">
       <div id="landing" style="padding-left:8vw;" class="description row">
         <div id="p5CanvasMobile"  style="position:fixed;">
@@ -43,12 +44,12 @@
           <h2 id="prenom">Typhaine Le Galès</h2>
         </div>
       </div>
+
       <div id ="typeTxt" class="description invisible">
         <div class="row">
           <div class="text col-11 col-md-6 sectionHeader">
-            <!-- <h2 class="en projectTitle">CODING TYPE</h2> -->
             <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="65%"
-            style="overflow:visible">
+            style="overflow:hidden">
                 <text style="fill:none; stroke:black; stroke-width:0.5;" x="-15" y="120" class="projectTitle">CODING</text>
                 <text style="fill:none; stroke:black; stroke-width:0.5; " x="-15" y="250" class="projectTitle">TYPE</text>
                 <text style="fill:#f6f6f6; z-index:-30;" x="-15" y="120" class="projectTitle">CODING</text>
@@ -58,7 +59,7 @@
                   <text x="0" y="250" class="projectTitle">TYPE</text>
                 </clipPath>
             </svg>
-            <div class="maskDivTitle" id="maskDivTitle1" ></div>
+            <div class="maskDivTitle projectTitle" id="maskDivTitle1" ></div>
             <p class="en">This project is an exploration of <strong>letter form </strong> through a <strong>computational approach</strong>, using the  <strong> open-source </strong> Processing environment. </p>
             <p class="fr invisible">Ce projet explore une <strong>approche generative de la typographie </strong>en utilisant l'environnement open-source Processing. </p>
           </div>
@@ -67,43 +68,41 @@
 
       <div id= 'furbyTxt' class="description invisible">
         <div class="row">
-           <!--  <h1 class="projectTitle"> THE INTERNET OF TOYS</h1> -->
-           <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="65%"
-            style="overflow:visible">
-                <text style="fill:none; stroke:black; stroke-width:0.5;" x="0" y="120" class="projectTitle">THE INTERNET</text>
-                <text style="fill:none; stroke:black; stroke-width:0.5; " x="0" y="250" class="projectTitle">OF TOYS</text>
-                <text style="fill:#f6f6f6; z-index:-30;" x="0" y="120" class="projectTitle">THE INTERNET</text>
-                <text style="fill:#f6f6f6; z-index:-30;" x="0" y="250" class="projectTitle">OF TOYS</text>
-                <clipPath id="masking2">
-                  <text x="-15" y="120" class="projectTitle">THE INTERNET</text>
-                  <text x="-15" y="250" class="projectTitle">OF TOYS</text>
-                </clipPath>
+          <div class="text sectionHeader">
+             <!--  <h1 class="projectTitle"> THE INTERNET OF TOYS</h1> -->
+             <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="65%"
+              style="overflow:hidden">
+               <text style="fill:none; stroke:black; stroke-width:0.5;" x="15" y="120" class="projectTitle">THE INTERNET</text>
+              <text style="fill:none; stroke:black; stroke-width:0.5; " x="15" y="250" class="projectTitle">OF TOYS</text>
+              <text style="fill:#f6f6f6; z-index:-30;" x="15" y="120" class="projectTitle">THE INTERNET</text>
+              <text style="fill:#f6f6f6; z-index:-30;" x="15" y="250" class="projectTitle">OF TOYS</text>
+              <clipPath id="masking2">
+                  <text x="0" y="120" class="projectTitle">THE INTERNET</text>
+                  <text x="0" y="250" class="projectTitle">OF TOYS</text>
+              </clipPath>
             </svg>
-            <div class="maskDivTitle" id="maskDivTitle2" ></div>
-
-        </div>
-        <div class="row twoLinerHeader">
-          <div class="text col-10 col-md-6">
-            <p class="en"> I imagined the <strong>Smart Furby</strong>, a  <strong> disobedient voice AI</strong> toy meant to mirror the complexity of social interaction through play. </p>
-            <p class="fr invisible"> J'imaginé un 'Smart Furby', <strong> un jouet intelligent désobéissant </strong> voué a reproduire la complexité des interactions sociales a travers le jeu.  <br>
-             </p>
+            <div class="maskDivTitle projectTitle" id="maskDivTitle2" ></div>
+            <div class=" col-10 col-md-6">
+              <p class="en"> I imagined the <strong>Smart Furby</strong>, a  <strong> disobedient voice AI</strong> toy meant to mirror the complexity of social interaction through play. </p>
+              <p class="fr invisible"> J'imaginé un 'Smart Furby', <strong> un jouet intelligent désobéissant </strong> voué a reproduire la complexité des interactions sociales a travers le jeu.  <br>
+              </p>
+            </div>
           </div>
         </div>
       </div>
+
       <div id= 'foodTxt' class="description invisible">
-        <div class="row">
+        <div class="row sectionHeader">
           <!-- <h1 class="projectTitle"> STICKY BUSINESS</h1> -->
           <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="65%"
             style="overflow:visible">
-                <text style="fill:none; stroke:black; stroke-width:0.5;" x="0" y="120" class="projectTitle">STICKY BUSINESS</text>
-                <text style="fill:#f6f6f6; z-index:-30;" x="0" y="120" class="projectTitle">STICKY BUSINESS</text>
-                <clipPath id="masking3">
-                  <text x="-15" y="120" class="projectTitle">STICKY BUSINESS</text>
-                </clipPath>
-            </svg>
-            <div id="maskDivTitle3" class="maskDivTitle"></div>
-        </div>
-        <div class="row">
+              <text style="fill:none; stroke:black; stroke-width:0.5;" x="15" y="120" class="projectTitle">STICKY BUSINESS</text>
+              <text style="fill:#f6f6f6; z-index:-30;" x="15" y="120" class="projectTitle">STICKY BUSINESS</text>
+              <clipPath id="masking3">
+                <text x="0" y="120" class="projectTitle">STICKY BUSINESS</text>
+              </clipPath>
+          </svg>
+          <div id="maskDivTitle3" class="maskDivTitle projectTitle"></div>
           <div class="text col-11 col-md-6">
             <p class="en">For an exhibition about sugar at the Stedelijk Museum of Schriedam, I researched <strong>sugar crops as an alternative to fossile fuel</strong> and worked on communicating the socio-economic stakes of such a scenario with both digital and physical medias. </p>
             <p class="fr invisible"> Dans le cadre  d'une exposition sur le sucre au Stedelijk Museum de Schriedam, j'ai développé un concept pour une experience de réalité virtuelle autour des problématiques socio-économiques qui entoure l'utilisation grandissante de la betterave sucrière comme bio-carburant. <br>
@@ -114,47 +113,47 @@
 
 
       <div id ="dotTxt" class="description invisible">
-        <div class="row">
+        <div class="row sectionHeader">
           <!-- <h1 class="projectTitle">Generative Print</h1> -->
-           <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="65%"
-            style="overflow:visible">
-                <text style="fill:none; stroke:black; stroke-width:0.5;" x="0" y="120" class="projectTitle">GENERATIVE</text>
-                <text style="fill:none; stroke:black; stroke-width:0.5; " x="0" y="250" class="projectTitle">PRINT</text>
-                <text style="fill:#f6f6f6; z-index:-30;" x="0" y="120" class="projectTitle">GENERATIVE</text>
-                <text style="fill:#f6f6f6; z-index:-30;" x="0" y="250" class="projectTitle">PRINT</text>
-                <clipPath id="masking4">
-                  <text x="-15" y="120" class="projectTitle">GENERATIVE</text>
-                  <text x="-15" y="250" class="projectTitle">PRINT</text>
-                </clipPath>
-            </svg>
-            <div class="maskDivTitle" id="maskDivTitle4" ></div>
+          <div class="col-11 col-sm-6">
 
-        </div>
-        <div class="row twoLinerHeader">
-          <div class="text col-11 col-sm-6">
-            <p class="en"> To follow through with the previous project, I experimented with an <strong>Axidraw</strong> to explore printing possibilities for either 2D or 3D computer generated graphics. </p>
-            <p class="fr invisible">
-              Ces impressions réalisées avec un <strong> Axidraw </strong> font partit d'une recherche autour de la physicalité possible de formes en 2 ou 3D générées de manière procédurale sur un ordinateur.
-            </p>
+            <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="65%"
+              style="overflow:visible">
+              <text style="fill:none; stroke:black; stroke-width:0.5;" x="-15" y="120" class="projectTitle">GENERATIVE</text>
+              <text style="fill:none; stroke:black; stroke-width:0.5; " x="-15" y="250" class="projectTitle">PRINT</text>
+              <text style="fill:#f6f6f6; z-index:-30;" x="-15" y="120" class="projectTitle">GENERATIVE</text>
+              <text style="fill:#f6f6f6; z-index:-30;" x="-15" y="250" class="projectTitle">PRINT</text>
+                <clipPath id="masking4">
+                  <text x="0" y="120" class="projectTitle">GENERATIVE</text>
+                  <text x="0" y="250" class="projectTitle">PRINT</text>
+                </clipPath>
+              </svg>
+              <div class="maskDivTitle projectTitle" id="maskDivTitle4" ></div>
+            <div class="text">
+              <p class="en"> To follow through with the previous project, I experimented with an <strong>Axidraw</strong> to explore printing possibilities for either 2D or 3D computer generated graphics. </p>
+              <p class="fr invisible">
+                Ces impressions réalisées avec un <strong> Axidraw </strong> font partit d'une recherche autour de la physicalité possible de formes en 2 ou 3D générées de manière procédurale sur un ordinateur.
+              </p>
+            </div>
           </div>
         </div>
       </div>
 
       <div id= 'digitalSpaceTxt' class="description invisible row">
-        <div class="text col-11 col-sm-6">
+        <div class="text col-11 col-sm-6 sectionHeader">
           <!-- <h1 class="projectTitle"> Web Work </h1> -->
            <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%"
             style="overflow:visible">
-                <text style="fill:none; stroke:black; stroke-width:0.5;" x="0" y="120" class="projectTitle">WEB</text>
-                <text style="fill:none; stroke:black; stroke-width:0.5; " x="0" y="250" class="projectTitle">WORKS</text>
-                <text style="fill:#f6f6f6; z-index:-30;" x="0" y="120" class="projectTitle">WEB</text>
-                <text style="fill:#f6f6f6; z-index:-30;" x="0" y="250" class="projectTitle">WORKS</text>
+                <text style="fill:none; stroke:black; stroke-width:0.5;" x="-15" y="120" class="projectTitle">WEB</text>
+                <text style="fill:none; stroke:black; stroke-width:0.5; " x="-15" y="250" class="projectTitle">WORKS</text>
+                <text style="fill:#f6f6f6; z-index:-30;" x="-15" y="120" class="projectTitle">WEB</text>
+                <text style="fill:#f6f6f6; z-index:-30;" x="-15" y="250" class="projectTitle">WORKS</text>
                 <clipPath id="masking5">
-                  <text x="15" y="120" class="projectTitle">WEB</text>
-                  <text x="15" y="250" class="projectTitle">WORKS</text>
+                  <text x="0" y="120" class="projectTitle">WEB</text>
+                  <text x="0" y="250" class="projectTitle">WORKS</text>
                 </clipPath>
             </svg>
-            <div class="maskDivTitle" id="maskDivTitle5" ></div>
+            <div class="maskDivTitle projectTitle" id="maskDivTitle5" ></div>
           <p class="en"></p>
           <p class="fr invisible">  </p>
         </div>

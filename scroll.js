@@ -18,7 +18,6 @@ function map_range(value, low1, high1, low2, high2) {
 function SVGmaskHeader (maskArray, index, sectionsArray, imgSectionArray) {
   var fillAmount = map_range(window.scrollY - sectionsArray[index].offsetTop, 0,imgSectionArray[index].clientHeight, 100, 0 );
   maskArray[index-1].style.width = `${fillAmount}%`;
-  console.log(fillAmount);
 }
 
 function nav (currIndex, descriptionArray, btnArray) {
@@ -73,11 +72,10 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     var nom = document.getElementById('prenom');
-    var maskDiv= document.getElementById('maskDivTitle1');
     var portrait= document.getElementById('p5CanvasMobile');
     portrait.style.top = `${window.scrollY/4}px`;
     nom.style.opacity = `${window.scrollY/imgSection[0].clientHeight}`;
-    maskDiv.style.width = `${map_range(window.scrollY - sections[1].offsetTop, 0,imgSection[1].clientHeight, 100, 0 )}%`;
+
   });
 }, false);
 

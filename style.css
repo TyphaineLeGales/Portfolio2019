@@ -228,6 +228,12 @@ h1, h2, h4, h5, h6 {
 
   }
 
+  svg{
+    position:relative;
+    top:0;
+    left:0;
+  }
+
   .projectTitle{
     font-family: 'Playfair Display';
     font-weight:normal;
@@ -236,8 +242,6 @@ h1, h2, h4, h5, h6 {
     line-height:0.9;
     animation-duration: 0.8s;
     animation-name: pop;
-    text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
-    position:relative;
     color: #f6f6f6;
   }
 
@@ -399,24 +403,18 @@ li {
 
 @keyframes pop {
   from {
-    margin-top: 20%;
     opacity:0;
 
   }
 
   to {
-    margin-top: 0%;
     opacity:1;
   }
 }
 
 .sectionHeader {
-  animation-duration: 0.8s;
-    animation-name: pop;
-}
-
-.twoLinerHeader {
-  margin-top:8em;
+  animation-duration: 0.5s;
+  animation-name: pop;
 }
 
 
