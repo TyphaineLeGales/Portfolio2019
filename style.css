@@ -322,9 +322,7 @@ h1, h2, h4, h5, h6 {
     -webkit-clip-path: url(#masking5);
   }
 */
-
-
-  .description p {
+.description p {
     margin-top:1.5em;
   }
 
