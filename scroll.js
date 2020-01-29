@@ -15,13 +15,19 @@ function map_range(value, low1, high1, low2, high2) {
     return low2 + (high2 - low2) * (value - low1) / (high1 - low1);
 }
 
-function maskHeader () {
+function SVGmaskHeader () {
 
 }
 
-function nav (currIndex, descriptionArray) {
+function nav (currIndex, descriptionArray, btnArray) {
   invisible(descriptionArray);
   descriptionArray[currIndex].classList.remove('invisible');
+  if(currIndex != 0) {
+    black(btnArray);
+    btnArray[currIndex-1].style.color="#113ffa";
+  } else {
+    black(btnArray);
+  }
 }
 
 
@@ -31,30 +37,29 @@ document.addEventListener('DOMContentLoaded', function() {
   var descriptions = document.querySelectorAll("div.description");
   var sections = document.querySelectorAll("div.section");
   var imgSection = document.querySelectorAll("div.showImg");
-  // console.log(descriptions, sections, imgSection);
+  var arrow = document.getElementsByClassName('arrow');
+  var buttons = document.querySelectorAll('button');
+  console.log(descriptions, buttons);
 
-  var type = document.getElementById("typeTxt");
+
   var project1 = document.getElementById('section1');
   var showType = document.getElementById('showType');
 
-  var furby = document.getElementById('furbyTxt');
+
   var projectFurby = document.getElementById('sectionFurby');
   var showFurby = document.getElementById('showFurby');
 
-  var food = document.getElementById('foodTxt');
+
   var project2 = document.getElementById('section2');
   var showFood = document.getElementById('showFood');
 
-  var dot = document.getElementById('dotTxt');
+
   var project3 = document.getElementById('section3');
   var showDOT = document.getElementById('showDigital');
 
-  var dSpace = document.getElementById('digitalSpaceTxt');
+
   var project4 = document.getElementById('section4');
   var showDS = document.getElementById('showDigital');
-
-  var arrow = document.getElementsByClassName('arrow');
-  var buttons = document.querySelectorAll('button');
 
   var top = document.getElementById('top');
   var about = document.getElementById('showAbout');
@@ -66,45 +71,23 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
    if( -showAbout.clientHeight< top.offsetTop- window.scrollY+200){
-      //landing.classList.remove('invisible');
-      //invisible([type, food, dSpace, dot, contact, furby]);
-      nav(0, descriptions);
-      black([buttons[0],buttons[1], buttons[2], buttons[3],buttons[4]]);
+      nav(0, descriptions, buttons);
       arrow[0].classList.remove('up', 'blue');
       arrow[0].setAttribute("href", "#end");
    } else if(-showType.clientHeight < project1.offsetTop- window.scrollY) {
-      invisible([landing, food, dSpace, dot, contact, furby]);
-      type.classList.remove('invisible');
-      black([buttons[1], buttons[2], buttons[3],buttons[4]]);
-      buttons[0].style.color="#113ffa";
-      console.log(descriptions);
+      nav(1, descriptions, buttons);
     } else if(-showFurby.clientHeight < projectFurby.offsetTop- window.scrollY ){
-      invisible([landing, food, dSpace, dot, contact, type]);
-      furby.classList.remove('invisible');
-
+      nav(2, descriptions, buttons);
     } else if (-showFood.clientHeight < project2.offsetTop- window.scrollY){
-      // invisible([landing, type, dSpace, dot, contact, furby]);
-      // food.classList.remove('invisible');
-      nav(1, descriptions);
-      black([buttons[0], buttons[2], buttons[3],buttons[4]]);
-      buttons[1].style.color="#113ffa";
+      nav(3, descriptions, buttons);
     } else if(-showDOT.clientHeight < project3.offsetTop- window.scrollY ) {
-      invisible([landing, type, dSpace, food, contact, furby]);
-      dot.classList.remove('invisible');
-      black([buttons[0], buttons[1], buttons[3],buttons[4]]);
-      buttons[2].style.color="#113ffa";
+      nav(4, descriptions, buttons);
     } else if(-showDS.clientHeight < project4.offsetTop- window.scrollY) {
-      invisible([landing, type, dot, food, contact, furby]);
-      dSpace.classList.remove('invisible');
-      black([buttons[0], buttons[1], buttons[2],buttons[4]]);
-      buttons[3].style.color="#113ffa";
+      nav(5, descriptions, buttons);
     } else if(-showContact.clientHeight < end.offsetTop- window.scrollY){
-       invisible([landing, type, dot, food, dSpace, furby]);
-      contact.classList.remove('invisible');
+      nav(6, descriptions, buttons);
       arrow[0].classList.add('up', 'blue');
       arrow[0].setAttribute("href", "#top");
-      black([buttons[0], buttons[1], buttons[2], buttons[3]]);
-      buttons[4].style.color="#113ffa";
     }
 
     var nom = document.getElementById('prenom');
