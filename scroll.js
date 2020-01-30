@@ -33,6 +33,7 @@ function nav (currIndex, descriptionArray, btnArray) {
 
 
 document.addEventListener('DOMContentLoaded', function() {
+  document.getElementById('load_screen').style.display =" none";
   document.addEventListener('scroll', function(){
 
   var descriptions = document.querySelectorAll("div.description");
