@@ -118,14 +118,21 @@ h1, h2, h4, h5, h6 {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   p{
- font-size: 4em;
+ font-size: 3em;
 }
 
 h1, h2, h4, h5, h6 {
-  font-size:10vw;
-  font-family: 'gilroy-extrabold';
-  font-weight:bold;
+   text-align: left;
+    font-size:6em;
+    font-family: 'Playfair Display';
+    font-weight:bold;
 }
+
+
+
+ .description {
+  margin-left:1em;
+ }
 
 .images img {
     margin:20px 4vw;
@@ -133,7 +140,7 @@ h1, h2, h4, h5, h6 {
 
   .images {
   z-index:20;
-  margin-left:8vw;
+  margin-left:1.5em;
 }
   .arrow {
   position: fixed;
@@ -169,13 +176,26 @@ h1, h2, h4, h5, h6 {
 }
 #language {
     position:fixed;
-    top: 4em;
-    left: 3em;
+    top: 1em;
+    left: 1em;
   }
-  #showAbout {
+  #showAbout p {
+    text-align:center;
+    font-size:4em;
+    padding-left:0.2em;
 }
    #p5CanvasMobile {
-    margin-top:20vh;
+    margin-top:25em;
+    margin-left:12em;
+  }
+
+  #prenom {
+
+    margin-top:4em;
+    margin-left:0.5em;
+    opacity:0;
+    text-align:center;
+
   }
 
 }
@@ -247,7 +267,7 @@ h1, h2, h4, h5, h6 {
    #p5CanvasMobile {
     margin-top:11em;
     z-index:1;
-    padding-left:23em;
+    margin-left:23em;
 
   }
 
@@ -285,6 +305,11 @@ h1, h2, h4, h5, h6 {
     animation-duration: 0.8s;
     animation-name: pop;
     color: black;
+  }
+
+  #section4 p{
+    background-color:#f6f6f6;
+
   }
 
   /*.maskDivTitle {
