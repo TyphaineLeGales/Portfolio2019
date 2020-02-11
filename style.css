@@ -300,6 +300,11 @@ h1, h2, h4, h5, h6 {
 
   }
 
+   .floatingP {
+    background-color:none;
+
+  }
+
   svg{
     position:relative;
     top:0;
