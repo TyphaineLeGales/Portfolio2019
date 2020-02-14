@@ -15,10 +15,10 @@ function map_range(value, low1, high1, low2, high2) {
     return low2 + (high2 - low2) * (value - low1) / (high1 - low1);
 }
 
-function SVGmaskHeader (maskArray, index, sectionsArray, imgSectionArray) {
-  var fillAmount = map_range(window.scrollY - sectionsArray[index].offsetTop, 0,imgSectionArray[index].clientHeight, 100, 0 );
-  maskArray[index-1].style.width = `${fillAmount}%`;
-}
+// function SVGmaskHeader (maskArray, index, sectionsArray, imgSectionArray) {
+//   var fillAmount = map_range(window.scrollY - sectionsArray[index].offsetTop, 0,imgSectionArray[index].clientHeight, 100, 0 );
+//   maskArray[index-1].style.width = `${fillAmount}%`;
+// }
 
 function nav (currIndex, descriptionArray, btnArray) {
   invisible(descriptionArray);
@@ -34,6 +34,10 @@ function nav (currIndex, descriptionArray, btnArray) {
 
 document.addEventListener('DOMContentLoaded', function() {
   document.getElementById('load_screen').style.display =" none";
+
+  var portrait= document.getElementById('p5CanvasMobile');
+  // portrait.style.marginLeft = `${document.body.clientWidth/3}px`;
+  // console.log(window.innerWidth);
   document.addEventListener('scroll', function(){
 
   var descriptions = document.querySelectorAll("div.description");
@@ -68,10 +72,15 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     var nom = document.getElementById('prenom');
-    var portrait= document.getElementById('p5CanvasMobile');
-    portrait.style.top = `${window.scrollY/4}px`;
     nom.style.opacity = `${window.scrollY/imgSection[0].clientHeight}`;
 
+
+    if(window.scrollY > (window.innerHeight/1.5)) {
+      portrait.style.display = "block";
+
+    } else {
+      portrait.style.display = "none";
+    }
   });
 }, false);
 
