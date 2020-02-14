@@ -74,13 +74,14 @@ h1, h2, h4, h5, h6 {
 
   }
   #p5CanvasMobile {
-    margin-top:15em;
+    margin-top:110%;
+    margin-left:35%;
   }
 
   #prenom {
     opacity:0;
     text-align:center;
-    margin-left:0.75em;
+    /*margin-left:15%;*/
     margin-top:5em;
   }
 
@@ -110,6 +111,19 @@ h1, h2, h4, h5, h6 {
     text-align: center;
     font-size:1.2em;
   }
+
+  @keyframes transitionBio {
+  from {
+    opacity:0;
+    margin-left:-50%;
+
+  }
+
+  to {
+    opacity:1;
+     margin-left:35%;
+  }
+}
 
 }
 
@@ -192,8 +206,22 @@ h1, h2, h4, h5, h6 {
   }
 
   #p5CanvasMobile {
-    margin-top:25em;
+    margin-top:85%;
+    margin-left:15%;
   }
+
+   @keyframes transitionBio {
+  from {
+    opacity:0;
+    margin-left:-50%;
+
+  }
+
+  to {
+    opacity:1;
+     margin-left:15%;
+  }
+}
 
   #prenom {
     margin-top:4em;
@@ -274,11 +302,9 @@ h1, h2, h4, h5, h6 {
   }
 
   #p5CanvasMobile {
-    margin-top:11em;
-    z-index:1;
-    animation-duration: 0.5s;
-    animation-name: transitionBio;
+    margin-top:25%;
   }
+
 
 
   #prenom {
@@ -450,6 +476,27 @@ li {
   list-style-type: none;
 }
 
+.photo {
+    position:fixed;
+    z-index:1;
+    animation-duration: 0.5s;
+    animation-name: transitionBio;
+    display:none;
+}
+
+  #bio {
+    animation-duration: 0.5s;
+    animation-name: transitionBioText;
+    display:none;
+    position:fixed;
+    width:30%;
+    margin-left:38%;
+    margin-top:23%;
+    font-size:0.5em;
+    font-style:italic;
+    text-align:left;
+  }
+
 
 @keyframes pop {
   from {
@@ -464,18 +511,19 @@ li {
   }
 }
 
-@keyframes transitionBio {
+@keyframes transitionBioText {
   from {
     opacity:0;
-    margin-left:-50%;
+    margin-left:90%;
 
   }
 
   to {
     opacity:1;
-     margin-left:25%;
+     margin-left:38%;
   }
 }
+
 
 .sectionHeader {
   animation-duration: 0.5s;

@@ -35,9 +35,6 @@ function nav (currIndex, descriptionArray, btnArray) {
 document.addEventListener('DOMContentLoaded', function() {
   document.getElementById('load_screen').style.display =" none";
 
-  var portrait= document.getElementById('p5CanvasMobile');
-  // portrait.style.marginLeft = `${document.body.clientWidth/3}px`;
-  // console.log(window.innerWidth);
   document.addEventListener('scroll', function(){
 
   var descriptions = document.querySelectorAll("div.description");
@@ -73,13 +70,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
     var nom = document.getElementById('prenom');
     nom.style.opacity = `${window.scrollY/imgSection[0].clientHeight}`;
+    var portrait= document.getElementById('p5CanvasMobile');
+    var bio =  document.getElementById('bio');
 
 
     if(window.scrollY > (window.innerHeight/1.5)) {
       portrait.style.display = "block";
+      bio.style.display = "block";
 
     } else {
       portrait.style.display = "none";
+      bio.style.display = "none";
     }
   });
 }, false);
