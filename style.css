@@ -1,0 +1,538 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  p{
+    font-size: 1.5em;
+  }
+
+.images {
+  z-index:20;
+  margin-left:2em;
+}
+
+h1, h2, h4, h5, h6 {
+  margin:1em 1em;
+  font-size:3em;
+  font-family: 'Playfair Display';
+  font-weight:bold;
+  text-align:center;
+}
+
+.images img {
+    margin:3em 0;
+  }
+
+  .description p {
+    margin-left:1.2em;
+    text-align:center;
+  }
+
+  .arrow {
+  position: fixed;
+  bottom: 0.5em;
+  left: 0.7em;
+  display: block;
+  text-align: right;
+  text-decoration: none;
+  z-index: 200;
+  width: 1.5rem;
+  transition: transform 0.4s;
+}
+  .footer {
+  transform-origin: bottom left;
+  transform: rotate(90deg);
+  font-family: 'gilroy-extrabold';
+  position: fixed;
+  left: 1em;
+  top: 0em;
+  width: 100vh;
+  height:1.5em;
+  text-align: left;
+  z-index:100;
+  }
+
+  button {
+  font-size:0.7rem;
+  border-style: none;
+  text-align:left;
+  background-color:#f6f6f6;
+}
+  #language {
+    position:fixed;
+    bottom:1em;
+    right: 1em;
+    z-index:150;
+    margin:10px;
+  }
+
+
+  #showAbout {
+    text-align:center;
+  }
+
+  #showAbout p {
+    font-size:2em;
+
+  }
+  #p5CanvasMobile {
+    margin-top:110%;
+    margin-left:38%;
+  }
+
+  #prenom {
+    opacity:0;
+    text-align:center;
+    /*margin-left:15%;*/
+    margin-top:5em;
+  }
+
+  .floatingP {
+    background-color:#f6f6f6;
+
+  }
+
+  #ARText {
+    display:none;
+  }
+
+  .section{
+    margin-top:15em;
+  }
+
+  #top {
+    margin-top:0;
+  }
+
+  #contact {
+    margin-top:0;
+
+  }
+
+  #showContact p{
+    text-align: center;
+    font-size:1.2em;
+  }
+
+  @keyframes transitionBio {
+  from {
+    opacity:0;
+    margin-left:-50%;
+
+  }
+
+  to {
+    opacity:1;
+     margin-left:38%;
+  }
+}
+
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  p{
+    font-size: 3em;
+  }
+
+  h1, h2, h4, h5, h6 {
+     text-align: left;
+      font-size:6em;
+      font-family: 'Playfair Display';
+      font-weight:bold;
+  }
+
+  .floatingP {
+    background-color:#f6f6f6;
+
+  }
+
+  .description {
+    margin-left:1em;
+  }
+
+  .images img {
+    margin:4em 2em;
+  }
+
+  .images {
+    z-index:20;
+    margin-left:1.5em;
+  }
+  .arrow {
+    position: fixed;
+    bottom: 1vh;
+    left: 2vw;
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    z-index: 200;
+    width: 1.5rem;
+    transition: transform 0.4s;
+  }
+
+  .footer {
+    font-family: 'gilroy-extrabold';
+    font-weight:bold;
+    font-size:1rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height:6vh;
+    background-color: #f6f6f6;
+    box-shadow: 0 0 5px 5px #f6f6f6;
+    text-align: center;
+    z-index:100;
+  }
+
+  button {
+    font-size:0.8rem;
+    border-style: none;
+    text-align:left;
+    background-color:#f6f6f6;
+  }
+
+  #language {
+    position:fixed;
+    top: 1em;
+    left: 1em;
+    z-index:200;
+  }
+
+  #showAbout p {
+    text-align:center;
+    font-size:4em;
+    padding-left:0.2em;
+  }
+
+  #p5CanvasMobile {
+    margin-top:85%;
+    margin-left:15%;
+  }
+
+   @keyframes transitionBio {
+  from {
+    opacity:0;
+    margin-left:-50%;
+
+  }
+
+  to {
+    opacity:1;
+     margin-left:15%;
+  }
+}
+
+  #prenom {
+    margin-top:4em;
+    margin-left:0.5em;
+    opacity:0;
+    text-align:center;
+  }
+
+  #contact {
+    margin-top:12em;
+  }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  p{
+   font-size: 2em;
+  }
+
+  h1, h2, h4, h5, h6 {
+    text-align: left;
+    font-size:2em;
+    font-family: 'Playfair Display';
+    font-weight:bold;
+  }
+  .images img {
+    margin:3.5em 1em;
+  }
+
+  .images {
+  z-index:20;
+  margin-left:4em;
+  }
+
+  .arrow {
+  position: fixed;
+  bottom: 2em;
+  left: 1em;
+  display: block;
+  text-align: right;
+  text-decoration: none;
+  z-index: 200;
+  width: 2rem;
+  transition: transform 0.4s;
+  }
+  .footer {
+  font-family: 'gilroy-extrabold';
+  font-weight:bold;
+  font-size:1rem;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height:12vh;
+  background-color: #f6f6f6;
+  box-shadow: 0 0 5px 5px #f6f6f6;
+  text-align: center;
+  z-index:100;
+  }
+
+  button {
+  font-size:0.8rem;
+  border-style: none;
+  text-align:left;
+  background-color:#f6f6f6;
+  margin:0px 30px;
+  padding-top:4vh;
+  }
+
+  #language {
+    position:fixed;
+    top: 1.5em;
+    left: 2em;
+  }
+  #showAbout {
+  text-align:center;
+  }
+
+  #p5CanvasMobile {
+    margin-top:25%;
+  }
+
+
+
+  #prenom {
+    margin-top:2em;
+    font-family : 'Playfair Display';
+    font-weight: black ;
+    font-size:6em;
+    left:2em;
+    color:black;
+    opacity:0;
+
+  }
+
+  #showAbout p {
+    font-size : 4em;
+    color:#1B1E1C;
+    z-index:10;
+
+  }
+
+   .floatingP {
+    background-color:none;
+
+  }
+
+  svg{
+    position:relative;
+    top:0;
+    left:0;
+  }
+
+  .projectTitle{
+    font-family: 'Playfair Display';
+    font-weight:normal;
+    font-size:9em;
+    z-index:50;
+    line-height:0.9;
+    animation-duration: 0.8s;
+    animation-name: pop;
+    color: black;
+  }
+
+  #section4 p{
+    background-color:#f6f6f6;
+
+  }
+
+  .description p {
+    margin-top:1.5em;
+  }
+
+  #contact {
+    margin-top:0;
+  }
+}
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+body {
+ font-family: 'Playfair Display';
+ background-color:#f6f6f6;
+/* cursor: pointer;*/
+}
+
+
+#wrapper {
+position:relative;
+ overflow-x: hidden;
+
+}
+@font-face {
+    font-family: 'gilroy-extrabold';
+    src: url('Font/gilroy-extrabold-webfont.woff2') format('woff2'),
+         url('Font/gilroy-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+#load_screen{
+  position:fixed;
+  width:100%;
+  height:100%;
+  background-color:black;
+  z-index:300;
+}
+
+button:focus {
+  outline:0;
+}
+
+button:hover {
+   transform:scale(1.1);
+}
+
+summary {
+  font-family: 'gilroy-extrabold';
+  font-weight:bold;
+  color:black;
+  font-size:0.5rem;
+}
+
+summary:focus{outline:0;}
+
+summary:hover {
+  color:#113ffa;
+}
+
+details p{
+  font-size:0.6rem;
+}
+
+a:hover {
+  color:black;
+  text-decoration: underline;
+}
+
+a:link {
+  color:black;
+  text-decoration:none;
+}
+
+a:visited {
+  color:black;
+  text-decoration: none;
+}
+
+
+.description {
+  position:fixed;
+  z-index:-1;
+  text-align:left;
+  width:100%;
+}
+
+.invisible {
+  display:none;
+}
+
+.break {
+  opacity:0;
+}
+
+.arrow.up {
+  transform: rotate( 180deg );
+}
+
+.arrow.blue svg polygon {
+  fill: #113ffa;
+}
+
+
+#contact {
+  text-align:center;
+}
+
+.floatingP {
+  padding:25px;
+
+  font-size:1em;
+  text-align:center;
+}
+
+li {
+  list-style-type: none;
+}
+
+.photo {
+    position:fixed;
+    z-index:1;
+    animation-duration: 0.5s;
+    animation-name: transitionBio;
+    display:none;
+}
+
+  #bio {
+    animation-duration: 0.5s;
+    animation-name: transitionBioText;
+    display:none;
+    position:fixed;
+    width:30%;
+    margin-left:38%;
+    margin-top:23%;
+    font-size:0.5em;
+    font-style:italic;
+    text-align:left;
+  }
+
+
+@keyframes pop {
+  from {
+    opacity:0;
+    margin-top:20%;
+
+  }
+
+  to {
+    opacity:1;
+     margin-top:0%;
+  }
+}
+
+@keyframes transitionBioText {
+  from {
+    opacity:0;
+    margin-left:90%;
+
+  }
+
+  to {
+    opacity:1;
+     margin-left:38%;
+  }
+}
+
+
+.sectionHeader {
+  animation-duration: 0.5s;
+  animation-name: pop;
+}
+
+#showContact a {
+  color:#113ffa;
+}
+
+
+
