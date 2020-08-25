@@ -163,6 +163,21 @@ p{
   z-index:-1;
   text-align:left;
   width:100%;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.projectTitle{
+  font-family: 'Playfair Display';
+  font-weight:normal;
+  font-size:9em;
+  grid-column:1/2;
+  z-index:50;
+  line-height:0.9;
+  margin-top:0;
+  animation-duration: 0.8s;
+  animation-name: pop;
+  color: black;
 }
 
 .invisible {
@@ -229,54 +244,30 @@ li {
 }
 
 
-  #showAbout {
+#showAbout {
   text-align:center;
-  }
+}
 
-  #prenom {
-    margin-top:2em;
-    font-family : 'Playfair Display';
-    font-weight: black ;
-    font-size:6em;
-    left:2em;
-    color:black;
-    opacity:0;
+#landing {
+  display:flex;
+  justify-content:center;
+  align-items: center;
+}
+#prenom {
 
-  }
+  font-family : 'Playfair Display';
+  font-weight: black ;
+  font-size:6em;
+  color:black;
+  opacity:0;
 
-  #showAbout p {
-    font-size : 4em;
+}
+
+#showAbout p {
+  font-size : 4em;
     color:#1B1E1C;
     z-index:10;
-
-  }
-
-   .floatingP {
-    background-color:none;
-
-  }
+}
 
 
-  .projectTitle{
-    font-family: 'Playfair Display';
-    font-weight:normal;
-    font-size:9em;
-    z-index:50;
-    line-height:0.9;
-    animation-duration: 0.8s;
-    animation-name: pop;
-    color: black;
-  }
 
-  #section4 p{
-    background-color:#f6f6f6;
-
-  }
-
-  .description p {
-    margin-top:1.5em;
-  }
-
-  #contact {
-    margin-top:0;
-  }

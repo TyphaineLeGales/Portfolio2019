@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     var nom = document.getElementById('prenom');
-    nom.style.opacity = `${window.scrollY/imgSection[0].clientHeight}`;
+    // nom.style.opacity = `${window.scrollY/imgSection[0].clientHeight}`;
 
   });
 }, false);
