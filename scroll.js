@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var descriptions = document.querySelectorAll("div.description");
   var sections = document.querySelectorAll("div.section");
   var imgSection = document.querySelectorAll("div.showImg");
-  var buttons = document.querySelectorAll('button');
+  var buttons = document.querySelectorAll("a.underlineAnim");
 
    if( -imgSection[0].clientHeight< sections[0].offsetTop- window.scrollY){
       nav(0, descriptions, buttons);

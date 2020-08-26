@@ -9,10 +9,9 @@
 
 /* Extra small devices (phones, 600px and down) */
 
-
 @media only screen and (max-width: 600px) {
 
-  footer {
+  footer > ul {
     transform-origin: bottom left;
     transform: rotate(90deg);
     left: 0;
@@ -36,7 +35,7 @@
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
 
-  footer {
+  footer >ul {
     font-weight:700;
     font-size:1rem;
     left: 0;
@@ -60,7 +59,7 @@
 @media only screen and (min-width: 992px) {
 
 
-  footer {
+  footer > ul{
     font-size:1rem;
     left: 0;
     bottom: 0;
@@ -95,8 +94,6 @@ overflow-x: hidden;
 
 }
 
-
-
 summary {
   font-family: gilroy-extrabold;
   font-weight:bold;
@@ -112,27 +109,39 @@ details p{
   font-size:0.6rem;
 }
 
-button {
+li > a {
+  padding-bottom:2px;
   font-family: gilroy-extrabold;
   font-size:0.8rem;
   text-align:left;
   background-color:#f6f6f6;
-  /*margin:0px 30px;
-  padding-top:4vh;*/
   transition:all 0.2s;
-  border-style: none;
+  border-bottom: 1px solid transparent;
+  border-bottom-width : 0;
+  text-decoration:none;
+  cursor:pointer;
 }
 
-button:focus {
-  outline:0;
+a.underlineAnim {
+   position: relative;
 }
 
-button:hover {
-   border-style:none none solid none;
+a.underlineAnim:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
 }
-a:hover {
-  color:black;
-  text-decoration: underline;
+
+a.underlineAnim:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
 }
 
 a:link {
@@ -144,16 +153,16 @@ a:visited {
   color:black;
   text-decoration: none;
 }
-footer {
 
+footer > ul {
   display:flex;
   justify-content:space-evenly;
   font-family: gilroy-extrabold;
   position: fixed;
   z-index:100;
   padding:2%;
-
 }
+
 .images img {
   padding:3.5em 1em;
 }
