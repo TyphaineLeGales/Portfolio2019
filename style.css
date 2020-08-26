@@ -154,14 +154,17 @@ a:visited {
   text-decoration: none;
 }
 
+
 footer > ul {
+  position: fixed;
+  margin:0;
+  z-index:100;
   display:flex;
   justify-content:space-evenly;
   font-family: gilroy-extrabold;
-  position: fixed;
-  z-index:100;
   padding:2%;
 }
+
 
 .images img {
   padding:3.5em 1em;
@@ -178,6 +181,10 @@ footer > ul {
   width:100%;
   display:grid;
   grid-template-columns: 1fr 1fr;
+}
+
+.projectSumUp {
+  font-size:2vw;
 }
 
 .projectTitle{
