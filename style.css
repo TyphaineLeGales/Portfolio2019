@@ -12,17 +12,14 @@
 
 @media only screen and (max-width: 600px) {
 
-  .footer {
+  footer {
     transform-origin: bottom left;
     transform: rotate(90deg);
-   font-family: gilroy-extrabold;
-    position: fixed;
-    left: 1em;
-    top: 0em;
-    width: 100vh;
-    height:1.5em;
+    left: 0;
+    top: 0;
     text-align: left;
-    z-index:100;
+    width:100vh;
+
   }
 
   #language {
@@ -39,19 +36,15 @@
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
 
-  .footer {
-    font-family: gilroy-extrabold;
+  footer {
     font-weight:700;
     font-size:1rem;
-    position: fixed;
     left: 0;
     bottom: 0;
-    width: 100%;
-    height:6vh;
+    width: 100vw;
     background-color: #f6f6f6;
     box-shadow: 0 0 5px 5px #f6f6f6;
     text-align: center;
-    z-index:100;
   }
 
   #language {
@@ -67,19 +60,14 @@
 @media only screen and (min-width: 992px) {
 
 
-  .footer {
-   font-family: gilroy-extrabold;
-    font-weight:bold;
+  footer {
     font-size:1rem;
-    position: fixed;
     left: 0;
     bottom: 0;
-    width: 100%;
-    height:12vh;
+    width: 100vw;
     background-color: #f6f6f6;
     box-shadow: 0 0 5px 5px #f6f6f6;
     text-align: center;
-    z-index:100;
   }
 
   #language {
@@ -108,13 +96,6 @@ overflow-x: hidden;
 }
 
 
-button:focus {
-  outline:0;
-}
-
-button:hover {
-   transform:scale(1.1);
-}
 
 summary {
   font-family: gilroy-extrabold;
@@ -134,13 +115,21 @@ details p{
 button {
   font-family: gilroy-extrabold;
   font-size:0.8rem;
-  border-style: none;
   text-align:left;
   background-color:#f6f6f6;
-  margin:0px 30px;
-  padding-top:4vh;
+  /*margin:0px 30px;
+  padding-top:4vh;*/
+  transition:all 0.2s;
+  border-style: none;
 }
 
+button:focus {
+  outline:0;
+}
+
+button:hover {
+   border-style:none none solid none;
+}
 a:hover {
   color:black;
   text-decoration: underline;
@@ -155,7 +144,16 @@ a:visited {
   color:black;
   text-decoration: none;
 }
+footer {
 
+  display:flex;
+  justify-content:space-evenly;
+  font-family: gilroy-extrabold;
+  position: fixed;
+  z-index:100;
+  padding:2%;
+
+}
 .images img {
   padding:3.5em 1em;
 }
@@ -242,12 +240,12 @@ li {
 
 #showAbout p {
   text-align:center;
-  line-height: 5vw;
-  font-size:4vw;
+  line-height: 5.5vw;
+  font-size:5vw;
   color:#1B1E1C;
   z-index:10;
   margin:0;
-  padding: 5% 10%;
+  padding: 5% 5.5vw;
 }
 
 #landing {
@@ -255,6 +253,7 @@ li {
   justify-content:center;
   align-items: center;
 }
+
 #prenom {
 
   font-family : 'Playfair Display';
