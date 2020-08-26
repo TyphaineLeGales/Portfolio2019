@@ -1,10 +1,21 @@
+@font-face {
+    font-family: 'gilroy-extrabold';
+    src: url('Font/gilroy-extrabold-webfont.woff2') format('woff2'),
+         url('Font/gilroy-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 /* Extra small devices (phones, 600px and down) */
+
+
 @media only screen and (max-width: 600px) {
 
   .footer {
     transform-origin: bottom left;
     transform: rotate(90deg);
-    font-family: 'Kanit', sans-serif;
+   font-family: gilroy-extrabold;
     position: fixed;
     left: 1em;
     top: 0em;
@@ -29,7 +40,7 @@
 @media only screen and (min-width: 600px) {
 
   .footer {
-    font-family: 'Kanit', sans-serif;
+    font-family: gilroy-extrabold;
     font-weight:700;
     font-size:1rem;
     position: fixed;
@@ -46,7 +57,7 @@
   #language {
     position:fixed;
     top: 1em;
-    left: 1em;
+    right: 1em;
     z-index:200;
   }
 
@@ -57,7 +68,7 @@
 
 
   .footer {
-    font-family: 'Kanit', sans-serif;
+   font-family: gilroy-extrabold;
     font-weight:bold;
     font-size:1rem;
     position: fixed;
@@ -74,7 +85,7 @@
   #language {
     position:fixed;
     top: 1.5em;
-    left: 2em;
+    right: 2em;
   }
 }
 
@@ -90,10 +101,9 @@ body {
 /* cursor: pointer;*/
 }
 
-
 #wrapper {
 position:relative;
- overflow-x: hidden;
+overflow-x: hidden;
 
 }
 
@@ -107,10 +117,9 @@ button:hover {
 }
 
 summary {
-  font-family: 'Kanit', sans-serif;
+  font-family: gilroy-extrabold;
   font-weight:bold;
   color:black;
-  font-size:0.5rem;
 }
 
 summary:focus{outline:0;}
@@ -118,9 +127,18 @@ summary:focus{outline:0;}
 summary:hover {
   color:#113ffa;
 }
-
 details p{
   font-size:0.6rem;
+}
+
+button {
+  font-family: gilroy-extrabold;
+  font-size:0.8rem;
+  border-style: none;
+  text-align:left;
+  background-color:#f6f6f6;
+  margin:0px 30px;
+  padding-top:4vh;
 }
 
 a:hover {
@@ -138,24 +156,12 @@ a:visited {
   text-decoration: none;
 }
 
-p{
-   font-size: 2em;
-  }
-
-  h1, h2, h4, h5, h6 {
-    text-align: left;
-    font-size:2em;
-    font-family: 'Playfair Display';
-    font-weight:bold;
-  }
-  .images img {
-    margin:3.5em 1em;
-  }
-
-  .images {
+.images img {
+  padding:3.5em 1em;
+}
+.images {
   z-index:20;
-  margin-left:4em;
-  }
+}
 
 
 .description {
@@ -193,16 +199,6 @@ p{
   text-align:center;
 }
 
-button {
-  font-family: 'Kanit', sans-serif;
-  font-weight:bold;
-  font-size:0.8rem;
-  border-style: none;
-  text-align:left;
-  background-color:#f6f6f6;
-  margin:0px 30px;
-  padding-top:4vh;
-  }
 
 .floatingP {
   padding:25px;
@@ -244,8 +240,14 @@ li {
 }
 
 
-#showAbout {
+#showAbout p {
   text-align:center;
+  line-height: 5vw;
+  font-size:4vw;
+  color:#1B1E1C;
+  z-index:10;
+  margin:0;
+  padding: 5% 10%;
 }
 
 #landing {
@@ -263,11 +265,6 @@ li {
 
 }
 
-#showAbout p {
-  font-size : 4em;
-    color:#1B1E1C;
-    z-index:10;
-}
 
 
 
