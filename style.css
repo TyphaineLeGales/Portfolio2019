@@ -15,9 +15,10 @@
     transform-origin: bottom left;
     transform: rotate(90deg);
     left: 0;
-    top: 0;
+    top: -2em;
     text-align: left;
     width:100vh;
+    padding:1em;
 
   }
 
@@ -27,6 +28,13 @@
     right: 1em;
     z-index:150;
     margin:10px;
+  }
+
+  #showAbout > p {
+    line-height: 40px;
+    font-size:40px;
+    text-align:left;
+    padding: 7%;
   }
 
 }
@@ -53,6 +61,13 @@
     z-index:200;
   }
 
+  #showAbout > p {
+    line-height: 70px;
+    font-size:70px;
+    text-align:center;
+    padding: 1% 5.5vw;
+  }
+
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -73,6 +88,13 @@
     position:fixed;
     top: 1.5em;
     right: 2em;
+  }
+
+  #showAbout > p {
+    line-height: 70px;
+    font-size:70px;
+    text-align:center;
+    padding: 1% 5.5vw;
   }
 }
 
@@ -255,13 +277,9 @@ li {
 
 
 #showAbout p {
-  text-align:center;
-  line-height: 5.5vw;
-  font-size:5vw;
   color:#1B1E1C;
   z-index:10;
   margin:0;
-  padding: 5% 5.5vw;
 }
 
 #landing {
