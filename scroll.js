@@ -58,8 +58,14 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     var nom = document.getElementById('prenom');
-    // nom.style.opacity = `${window.scrollY/imgSection[0].clientHeight}`;
+    nom.style.opacity = `${(window.scrollY/imgSection[0].clientHeight)}`;
 
+    if(window.scrollY < sections[0].clientHeight - sections[0].offsetTop) {
+      nom.style.display = "block";
+
+    } else {
+      nom.style.display = "none";
+    }
   });
 }, false);
 
