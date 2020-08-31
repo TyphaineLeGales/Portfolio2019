@@ -1,4 +1,3 @@
-
 function black (params){
    for (i=0; i<params.length; i++) {
       params[i].style.color="black";
@@ -57,15 +56,15 @@ document.addEventListener('DOMContentLoaded', function() {
       nav(6, descriptions, buttons);
     }
 
-    var nom = document.getElementById('prenom');
-    nom.style.opacity = `${(window.scrollY/imgSection[0].clientHeight)}`;
+    // var nom = document.getElementById('prenom');
+    // nom.style.opacity = `${(window.scrollY/imgSection[0].clientHeight)}`;
 
-    if(window.scrollY < sections[0].clientHeight - sections[0].offsetTop) {
-      nom.style.display = "block";
+    // if(window.scrollY < sections[0].clientHeight - sections[0].offsetTop) {
+    //   nom.style.display = "block";
 
-    } else {
-      nom.style.display = "none";
-    }
+    // } else {
+    //   nom.style.display = "none";
+    // }
   });
 }, false);
 

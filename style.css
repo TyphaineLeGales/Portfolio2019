@@ -296,13 +296,13 @@ li {
   margin:0;
 }
 
-#landing {
+/*#landing {
   display:flex;
   justify-content:center;
   align-items: center;
-}
+}*/
 
-#prenom {
+/*#prenom {
 
   font-family : 'Playfair Display';
   font-weight: black ;
@@ -310,7 +310,7 @@ li {
   color:black;
   opacity:0;
 
-}
+}*/
 
 
 
