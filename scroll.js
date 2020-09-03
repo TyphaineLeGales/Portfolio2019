@@ -30,6 +30,7 @@ function nav (currIndex, descriptionArray, btnArray) {
   }
 }
 
+//coding type apparait direct
 
 document.addEventListener('DOMContentLoaded', function() {
 

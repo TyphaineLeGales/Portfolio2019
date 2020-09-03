@@ -108,6 +108,7 @@ body {
  font-family: 'Playfair Display';
  background-color:#f6f6f6;
  margin:0;
+ /*visibility:hidden;*/
 /* cursor: pointer;*/
 }
 
@@ -277,7 +278,7 @@ li {
 
 
 .sectionHeader {
-  animation-duration: 0.5s;
+  animation-duration: 0.3s;
   animation-name: pop;
 }
 
@@ -296,22 +297,21 @@ li {
   margin:0;
 }
 
-/*#landing {
-  display:flex;
-  justify-content:center;
-  align-items: center;
-}*/
 
-/*#prenom {
+.showImg {
+  margin-top:50vh;
+}
 
-  font-family : 'Playfair Display';
-  font-weight: black ;
-  font-size:6em;
-  color:black;
-  opacity:0;
-
-}*/
+#showAbout {
+  margin-top: 0;
+}
 
 
 
+img {
+  width:20%;
+}
 
+video {
+  width:20%;
+}

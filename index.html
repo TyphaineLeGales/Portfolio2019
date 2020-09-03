@@ -4,16 +4,18 @@
   <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
   <title>Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,700;1,800&family=Playfair+Display:ital,wght@0,400;0,600;0,800;0,900;1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
   <link rel="stylesheet" href="style.css">
-  <script src="loadingScreen.js"></script>
+  <!-- <script src="loadingScreen.js"></script> -->
   <script src="scroll.js"></script>
   <script src="language.js"></script>
 </head>
 <body>
 
-  <div id="loadingScreen">
+  <!-- <div id="loadingScreen" class="animate__animated">
     <h1>Loading</h1>
-  </div>
+  </div> -->
   <div id="wrapper">
 
     <div id="language">
@@ -21,11 +23,40 @@
       <summary><p onclick="francais();">FR</p></summary>
     </div>
 
-    <div class="container">
-      <div id="landing" class="description">
-        <h2 id="prenom">Typhaine Le Galès</h2>
-      </div>
+    <footer>
+    <ul>
+      <li>
+        <a class="underlineAnim" onclick="document.getElementById('section2').scrollIntoView({behavior:'smooth', block: 'start'});">Burotopia</a>
+      </li>
+      <li>
+        <a class="underlineAnim" onclick="document.getElementById('section1').scrollIntoView({behavior: 'smooth', block: 'start'});">Coding Type</a>
+      </li>
+      <li>
+        <a class="underlineAnim" onclick="document.getElementById('section3').scrollIntoView({behavior: 'smooth', block: 'start'});">Generative Print</a>
+      </li>
+      <li>
+        <a class="underlineAnim" onclick="document.getElementById('section4').scrollIntoView({behavior: 'smooth', block: 'start'});">Web Works</a>
+      </li>
+      <li>
+        <a class="underlineAnim" onclick="document.getElementById('sectionFurby').scrollIntoView({behavior: 'smooth', block: 'start'});">Internet Of Toys</a>
+      </li>
+      <li>
+        <a class="underlineAnim" onclick="document.getElementById('end').scrollIntoView({behavior: 'smooth', block: 'start'});">Contact</a>
+      </li>
+    </ul>
+  </footer>
 
+    <div class="container">
+      <div id="landing" class="description"></div>
+
+       <div class="description invisible">
+        <div class="sectionHeader">
+          <h1 class="projectTitle"> BUROTOPIA</h1>
+          <p class="en projectSumUp">Burotopia is a <strong>digital playground</strong> that invites visitors to shift their prospective on bureaucratic procedures. <br>By fully giving it attention, one may find something surprising in even the most trivial and familiar situation</p>
+          <p class="fr invisible projectSumUp"> Dans le cadre  d'une exposition sur le sucre au Stedelijk Museum de Schriedam, j'ai développé un concept pour une experience de réalité virtuelle autour des problématiques socio-économiques qui entoure l'utilisation grandissante de la betterave sucrière comme bio-carburant. <br>
+            </p>
+        </div>
+      </div>
       <div class="description invisible">
         <div class="sectionHeader">
           <h1 class="projectTitle"> CODING TYPE</h1>
@@ -62,15 +93,6 @@
         </div>
       </div>
 
-      <div class="description invisible">
-        <div class="sectionHeader">
-          <h1 class="projectTitle"> BUROTOPIA</h1>
-          <p class="en projectSumUp">Burotopia is a <strong>digital playground</strong> that invites visitors to shift their prospective on bureaucratic procedures. <br>By fully giving it attention, one may find something surprising in even the most trivial and familiar situation</p>
-          <p class="fr invisible projectSumUp"> Dans le cadre  d'une exposition sur le sucre au Stedelijk Museum de Schriedam, j'ai développé un concept pour une experience de réalité virtuelle autour des problématiques socio-économiques qui entoure l'utilisation grandissante de la betterave sucrière comme bio-carburant. <br>
-            </p>
-        </div>
-      </div>
-
       <div id="contact" class="invisible description">
         <img src="assets/smashOrPass.gif" alt="" width="300">
       </div>
@@ -89,6 +111,17 @@
 
           <img src="assets/Sorry.png" alt="" width='180%' >
 
+        </div>
+      </div>
+         <div class="section" id="section2">
+        <div class="showImg">
+          <img src="assets/burotopia.png"alt="" width='60%' >
+          <p class="floatingP" id="ARText" style="position:absolute; top:35%;left:50%">
+            The username or password you entered is incorrect. Attempts remaining : 1”. An imperceptible tension seizes the human facing the computer as he racks his brain to find the valid combinaison. Wrong again. For security reasons, the sign-in has been blocked. He clicks reset password only to realise the recovery link has been send to an outdated email. Frustration settles in.
+          </p>
+        </div>
+        <div class="break">
+          <img src="assets/Sorry.png" alt="" width='170%' >
         </div>
       </div>
       <div class="section" id="section1">
@@ -214,18 +247,6 @@
         </div>
       </div>
 
-      <div class="section" id="section2">
-        <div class="showImg">
-          <img src="assets/burotopia.png"alt="" width='60%' >
-          <p class="floatingP" id="ARText" style="position:absolute; top:35%;left:50%">
-            The username or password you entered is incorrect. Attempts remaining : 1”. An imperceptible tension seizes the human facing the computer as he racks his brain to find the valid combinaison. Wrong again. For security reasons, the sign-in has been blocked. He clicks reset password only to realise the recovery link has been send to an outdated email. Frustration settles in.
-          </p>
-        </div>
-        <div class="break">
-          <img src="assets/Sorry.png" alt="" width='170%' >
-        </div>
-      </div>
-
       <div id="end" class="section">
         <div id="showContact" class="showImg">
           <p class="fr invisible" >N'hésitez pas à me contacter a : <a href="mailto:typhainethegales@gmail.com"><strong>typhainethegales@gmail.com</strong></a></p>
@@ -238,28 +259,5 @@
     </div>
 
   </div>
-
-   <footer>
-    <ul>
-      <li>
-        <a class="underlineAnim" onclick="document.getElementById('section1').scrollIntoView({behavior: 'smooth', block: 'start'});">Coding Type</a>
-      </li>
-      <li>
-        <a class="underlineAnim" onclick="document.getElementById('section3').scrollIntoView({behavior: 'smooth', block: 'start'});">Generative Print</a>
-      </li>
-      <li>
-        <a class="underlineAnim" onclick="document.getElementById('section4').scrollIntoView({behavior: 'smooth', block: 'start'});">Web Works</a>
-      </li>
-      <li>
-        <a class="underlineAnim" onclick="document.getElementById('sectionFurby').scrollIntoView({behavior: 'smooth', block: 'start'});">Internet Of Toys</a>
-      </li>
-      <li>
-        <a class="underlineAnim" onclick="document.getElementById('section2').scrollIntoView({behavior:'smooth', block: 'start'});">Burotopia</a>
-      </li>
-      <li>
-        <a class="underlineAnim" onclick="document.getElementById('end').scrollIntoView({behavior: 'smooth', block: 'start'});">Contact</a>
-      </li>
-    </ul>
-  </footer>
 </body>
 </html>
