@@ -306,12 +306,19 @@ li {
   margin-top: 0;
 }
 
+.logosBurotopia {
+  /*display:flex;
+  flex-wrap:wrap;*/
+}
 
-
-img {
-  width:20%;
+.logoItem img {
+  width:50%
 }
 
 video {
+  width:20%;
+}
+
+img {
   width:20%;
 }
