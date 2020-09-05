@@ -30,8 +30,6 @@ function nav (currIndex, descriptionArray, btnArray) {
   }
 }
 
-//coding type apparait direct
-
 document.addEventListener('DOMContentLoaded', function() {
 
   document.addEventListener('scroll', function(){
@@ -47,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
    } else if(-imgSection[1].clientHeight < sections[1].offsetTop- window.scrollY) {
       nav(1, descriptions, buttons);
       // descriptions[1].style.opacity = `${1 -(window.scrollY/imgSection[1].clientHeight)}`
-      // console.log(window.scrollY/imgSection[1].clientHeight);
+      // console.log(1-(window.scrollY/imgSection[1].clientHeight));
     } else if(-imgSection[2].clientHeight < sections[2].offsetTop- window.scrollY ){
       nav(2, descriptions, buttons);
     } else if (-imgSection[3].clientHeight <sections[3].offsetTop- window.scrollY){
