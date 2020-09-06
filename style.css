@@ -95,7 +95,7 @@
   }
 
   .projectTitle {
-    font-size:10vw;
+    font-size:8vw;
   }
 
   .sectionHeader {
@@ -137,7 +137,7 @@
   }
 
   .projectTitle {
-    font-size:10vw;
+    font-size:8vw;
   }
 
   .sectionHeader {
@@ -394,3 +394,63 @@ video {
 img {
   width:20%;
 }
+
+.gridWebWork {
+
+  width:100%;
+  display:flex;
+  flex-wrap:wrap;
+  padding:0 2em;
+
+}
+
+.gridWebWork p {
+  opacity:0;
+}
+
+.gridWebWork img {
+  width:100%;
+}
+
+.webItem {
+  position:relative;
+  transition:all 1s;
+}
+
+.webItem p{
+  position:absolute;
+  top:-1em;
+  left:0;
+  height:85%;
+  padding: 1em;
+  box-shadow: 0 5px 5px 5px #D3D3D3;
+  background-color:#f6f6f6;
+  font-family: gilroy-extrabold;
+}
+
+.linkToSite {
+  position:absolute;
+  bottom:1em;
+  right:1em;
+}
+
+.linkToSite a {
+  color:#113ffa;
+  font-family: gilroy-extrabold;
+}
+
+.dateSite {
+  font-family: gilroy-extrabold;
+  position:absolute;
+  bottom:1em;
+  left:1em;
+}
+
+.webItem:hover > p{
+  opacity:1;
+}
+
+.webItem:hover {
+  transform:scale(0.9);
+}
+
