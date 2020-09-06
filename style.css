@@ -57,6 +57,13 @@
 
   }
 
+  .videoResearchFurby {
+    display:flex;
+    flex-direction: column;
+    grid-row:1/span 1;
+    grid-column:1/span 2;
+  }
+
 }
 
 
@@ -102,6 +109,13 @@
     padding-left: 2%;
   }
 
+  .videoResearchFurby {
+    display:flex;
+    flex-direction: column;
+    grid-row:1/span 1;
+    grid-column:2/span 1;
+  }
+
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -142,6 +156,13 @@
 
   .sectionHeader {
     padding-left: 2%;
+  }
+
+  .videoResearchFurby {
+    display:flex;
+    flex-direction: column;
+    grid-row:1/span 1;
+    grid-column:2/span 1;
   }
 
 }
@@ -389,13 +410,7 @@ li {
   font-size:0.8em;
   margin-bottom:1%;
 }
-video {
-  width:20%;
-}
 
-img {
-  width:30%;
-}
 
 .gridWebWork {
 
@@ -458,4 +473,6 @@ img {
 
 .gridFurby {
   display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
 }
