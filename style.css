@@ -292,7 +292,7 @@ footer > ul {
 
 .projectSumUp {
   font-size:1.3em;
-  line-height:1.2;
+  line-height:1.1;
   padding:2%;
 }
 
@@ -359,8 +359,8 @@ li {
   color:#113ffa;
 }
 
-.gridBox {
-
+.grid {
+  display:grid;
 }
 
 
@@ -377,7 +377,6 @@ li {
 }
 
 #burotopia .showImg {
-  display:grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 1fr 0.75fr 2fr 0.1fr 1fr;
   align-items:center;
@@ -391,7 +390,6 @@ li {
 }
 
 .logosBurotopia {
-  display:grid;
   grid-column:3/span 2;
   grid-row: 1/span 1;
   grid-template-columns: repeat(4, 1fr);
@@ -475,7 +473,13 @@ li {
 
 .gridFurby {
   width:90%;
-  display:grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 0.5fr 1fr 0.5fr 0.5fr 1fr;
+}
+
+.gridCounting{
+  align-content: center;
+  justify-content:center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 0.25fr 1fr 1fr;
 }
