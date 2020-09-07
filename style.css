@@ -481,5 +481,15 @@ li {
   align-content: center;
   justify-content:center;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr 0.25fr 1fr 1fr;
+  grid-template-rows: 1fr 0.5fr 0.5fr 0.5fr 0.5fr;
 }
+
+.gridExperiments {
+  width:95%;
+  /*grid-template-columns: repeat(4, 0.5fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-auto-flow:row;*/
+  display:flex;
+  flex-wrap:wrap;
+}
+
