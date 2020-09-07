@@ -318,12 +318,6 @@ footer > ul {
   opacity:0;
 }
 
-
-#contact {
-  text-align:center;
-}
-
-
 .floatingP {
   padding:25px;
   width:10vw;
@@ -503,6 +497,11 @@ li {
   justify-content: center;
   align-content:center;
 }
+
+#contact {
+  text-align:center;
+}
+
 #prenom {
   font-family:gilroy-extrabold;
   position:fixed;
