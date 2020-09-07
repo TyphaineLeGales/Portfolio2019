@@ -29,13 +29,13 @@
         <a class="underlineAnim" onclick="document.getElementById('webWorks').scrollIntoView({behavior: 'smooth', block: 'start'});">Websites</a>
       </li>
       <li>
-        <a class="underlineAnim" onclick="document.getElementById('Furby').scrollIntoView({behavior: 'smooth', block: 'start'});">Internet Of Toys</a>
+        <a class="underlineAnim" onclick="document.getElementById('whoIsCounting').scrollIntoView({behavior: 'smooth', block: 'start'});">Who's Counting</a>
       </li>
       <li>
         <a class="underlineAnim" onclick="document.getElementById('genPrint').scrollIntoView({behavior: 'smooth', block: 'start'});">Generative Print</a>
       </li>
       <li>
-        <a class="underlineAnim" onclick="document.getElementById('whoIsCounting').scrollIntoView({behavior: 'smooth', block: 'start'});">Who's Counting</a>
+        <a class="underlineAnim" onclick="document.getElementById('Furby').scrollIntoView({behavior: 'smooth', block: 'start'});">Internet Of Toys</a>
       </li>
       <li>
         <a class="underlineAnim" onclick="document.getElementById('experiments').scrollIntoView({behavior: 'smooth', block: 'start'});">Experiments</a>
@@ -44,7 +44,9 @@
   </footer>
 
     <div class="container">
-      <div id="landing" class="description"></div>
+      <div id="landing" class="description">
+        <h1 id="prenom">Typhaine Le Gales</h1>
+      </div>
 
        <div class="description invisible">
         <div class="sectionHeader">
@@ -65,25 +67,6 @@
         </div>
       </div>
 
-      <div  class="description invisible">
-        <div class="sectionHeader">
-          <h1 class="projectTitle"> THE INTERNET OF TOYS</h1>
-          <p class="en projectSumUp"> I imagined the <strong>Smart Furby</strong>, a  <strong> disobedient voice AI</strong> toy meant to mirror the complexity of social interaction through play. </p>
-          <p class="fr invisible projectSumUp"> J'imaginé un 'Smart Furby', <strong> un jouet intelligent désobéissant </strong> voué a reproduire la complexité des interactions sociales a travers le jeu.  <br>
-          </p>
-        </div>
-      </div>
-
-      <div class="description invisible">
-        <div class="sectionHeader">
-          <h1 class="projectTitle">GENERATIVE PRINTS</h1>
-          <p class="en projectSumUp"> To follow through with the previous project, I experimented with an <strong>Axidraw</strong> to explore printing possibilities for either 2D or 3D computer generated graphics. </p>
-          <p class="fr invisible projectSumUp">
-            J'ai travaillé avec un <strong> Axidraw </strong> pour experimenter différentes  formes en 2 ou 3D générées de manière procédurale sur un ordinateur.
-          </p>
-        </div>
-      </div>
-
       <div class="description invisible">
         <div class="sectionHeader">
           <h1 class="projectTitle">WHO'S COUNTING</h1>
@@ -94,14 +77,29 @@
 
       <div class="description invisible">
         <div class="sectionHeader">
-          <h1 class="projectTitle">EXPERIMENTS</h1>
-           <p class="en projectSumUp">This project is an exploration of <strong>letter form </strong> through a <strong>computational approach</strong>, using the  <strong> open-source </strong> Processing environment. </p>
-          <p class="fr invisible projectSumUp">Ce projet explore une <strong>approche generative de la typographie </strong>en utilisant l'environnement open-source Processing. </p>
+          <h1 class="projectTitle">GENERATIVE PRINTS</h1>
+          <p class="en projectSumUp"> I worked with an <strong>Axidraw</strong> to explore printing possibilities for either 2D or 3D computer generated graphics using Processing and/or Blender. </p>
+          <p class="fr invisible projectSumUp">
+          J'ai travaillé avec un <strong> Axidraw </strong> pour experimenter différentes  formes en 2 ou 3D générées de manière procédurale sur un ordinateur.
+          </p>
         </div>
       </div>
 
-      <div id="contact" class="invisible description">
-        <img src="assets/smashOrPass.gif" alt="" width="300">
+      <div  class="description invisible">
+        <div class="sectionHeader">
+          <h1 class="projectTitle"> THE INTERNET OF TOYS</h1>
+          <p class="en projectSumUp"> I imagined the <strong>Smart Furby</strong>, a  <strong> disobedient voice AI</strong> toy meant to mirror the complexity of social interaction through play. I used a Raspberry PI to take over the Furby's motor function and link it with a slightly modified version of Alexa </p>
+          <p class="fr invisible projectSumUp"> J'imaginé un 'Smart Furby', <strong> un jouet intelligent désobéissant </strong> voué a reproduire la complexité des interactions sociales a travers le jeu.  <br>
+          </p>
+        </div>
+      </div>
+
+      <div class="description invisible">
+        <div class="sectionHeader">
+          <h1 class="projectTitle">EXPERIMENTS</h1>
+          <p class="en projectSumUp">This collection of shows my process experimenting with a variety of technologies and languages like Unity, P5.js, Ml5.js, Three.js, Processing, and shadertoy. I believe doing small try outs can feed into bigger projects and open up possibilities.
+          <p class="fr invisible projectSumUp"> Cette collection d'expériences à été réalisée avec une diversité de technologies et languages telles que Unity, p5js, Ml5.js, Three.js, Processing, et shadertoy. </p>
+        </div>
       </div>
     </div>
 
@@ -118,10 +116,9 @@
         </div>
       </div>
       <div class="section" id="burotopia">
-        <div class="showImg grid">
-          <!-- <p class="floatingP"style="grid-row: 1/span 1; grid-column:4/span 2;">We don’t live in a world that is designed for us. <br> We engage everyday with procedures that expect us to behave like robots.</p> -->
-          <div class="logosBurotopia grid">
-            <div class="logoItem" style="grid-row:1/span 2; grid-column:1/span ;">
+        <div class="showImg">
+          <div class="logosBurotopia">
+            <div class="logoItem" style="grid-row:1/span 2; grid-column:1/span 2;">
               <img src="./assets/Burotopia/logo/logo5.png" alt="">
             </div>
             <div class="logoItem">
@@ -158,7 +155,6 @@
 
       <div class="section" id="webWorks">
         <div class="showImg gridWebWork">
-
           <div class="webItem">
             <img src="assets/Web/maxmara.gif" width='100%'alt="">
             <p class="en">
@@ -216,6 +212,48 @@
         </div>
       </div>
 
+      <div id="whoIsCounting" class="section">
+        <div class="showImg gridCounting">
+          <img style="grid-column: 3/span 2; grid-row:1/span 1" src="assets/WhoIsCounting/interface.png" alt="" width="90%">
+          <h1 style="grid-row: 2/span 1; grid-column:3/span 2; z-index:10; text-align:center"><a href="https://typhainelegales.github.io/WhosCounting/" target="_blank"> <strong><u>Go to site </u></strong></a></h1>
+          <div style="grid-column: 2/span 1; grid-row:3/span 1">
+            <img src="assets/WhoIsCounting/supermarket.gif" alt="" width="110%">
+          </div>
+          <div style="grid-column: 3/span 1; grid-row:4/span 1">
+            <img src="assets/WhoIsCounting/timeLapse.gif" alt="" width="110%">
+          </div>
+           <div style="grid-column: 2/span 1; grid-row:5/span 1">
+            <img src="assets/WhoIsCounting/LordOfTheRing.gif" alt="" width="110%">
+            <!-- <img src="assets/WhoIsCounting/linear.gif" alt="" width="50%"> -->
+          </div>
+          <!-- <p class="fr invisible" >N'hésitez pas à me contacter a : <a href="mailto:typhainethegales@gmail.com"><strong>typhainethegales@gmail.com</strong></a></p>
+          <p class="en" >Feel free to contact me at <a href="mailto:typhainethegales@gmail.com"><strong>typhainethegales@gmail.com</strong></a></p> -->
+        <div class="break">
+          <img src="assets/Sorry.png" alt="" width='100%' >
+        </div>
+      </div>
+    </div>
+
+
+
+      <div class='section' id="genPrint">
+        <div class="showImg">
+          <div style="display:flex;justify-content: space-around;">
+             <img src="assets/Axidraw/ScanCrossWhiteOnBlack.jpeg" width="50%"alt="">
+            <img src="assets/Axidraw/ScanHandDrawnAndCircle.jpeg" width="50%"alt="">
+          </div>
+          <div style="display:flex">
+            <img src="assets/Axidraw/ScanDisplacedSphere1.jpeg"alt="" width="50%">
+            <img src="assets/Axidraw/ScanDisplacedSphere.jpeg"alt="" width="50%">
+          </div>
+
+          <img src="assets/Axidraw/ScanColumnBlackAndWhite.jpeg" width="110%"alt="">
+        </div>
+        <div class="break">
+          <img src="assets/Sorry.png" alt="" width='100%' >
+        </div>
+      </div>
+
       <div class="section" id="Furby">
         <div class="showImg grid gridFurby">
           <div class="videoResearchFurby">
@@ -255,91 +293,43 @@
           <p class="fr invisible"> ce projet parle aussi de <strong>réinventer nos relations aux objets</strong>. Les enfants ont tendace a traiter les assistants vocaux et autres IA comme des créatures sociales, floutant les lignes entre animé et inanimé, humains et objects. On peut donc imaginer des alternatives aux anciens modèles de pouvoir basé sur une relation unilatérale aux objects - la possession d'un artefact inanimé - et réfléchir à l'élaboration de nouvelles configuration. </p>
 
           <div style="grid-column:1/span 4; grid-row:5/span 1; display:flex; justify-content:space-between; align-items:center">
-            <img style="padding:5em"src="assets/Furby/FurbyEndterms1.png" alt="" width=80%>
-            <video controls = "true" width="50%">
+            <img src="assets/Furby/FurbyEndterms1.png" alt="" width="60%">
+            <video controls = "true" width="30%">
               <source src="assets/Furby/videoFurbyTalking.mp4" type="video/mp4">
             </video>
+            <img width="30%" src="assets/Furby/raspberry.jpg" alt="">
           </div>
+
         </div>
         <div class="break">
           <img src="assets/Sorry.png" alt="" width='100%' >
         </div>
       </div>
 
-      <div class='section' id="genPrint">
-        <div class="showImg">
-          <div style="display:flex;justify-content: space-around;">
-             <img src="assets/Axidraw/ScanCrossWhiteOnBlack.jpeg" width="50%"alt="">
-            <img src="assets/Axidraw/ScanHandDrawnAndCircle.jpeg" width="50%"alt="">
-          </div>
-          <div style="display:flex">
-            <img src="assets/Axidraw/ScanDisplacedSphere1.jpeg"alt="" width="50%">
-            <img src="assets/Axidraw/ScanDisplacedSphere.jpeg"alt="" width="50%">
-          </div>
+    <div class="section" id="experiments">
+      <div class="showImg gridExperiments">
+          <img src="assets/Experiments/unityParticles.gif">
+          <img src="assets/Experiments/unityCharacter.gif">
+          <img src="assets/Experiments/CA3D.gif">
+          <img src="assets/Experiments/CA2D.gif">
+          <img src="assets/Experiments/MarchedSphere.gif" alt="" width="50%">
+          <img src="assets/Experiments/smashOrPass.gif">
+          <img src="assets/Type/X1.gif" alt="">
+          <img src="assets/Type/GenerativeH.png" alt="">
+          <img src="assets/Type/H1.gif" alt="">
+          <img src="assets/Type/kinecticType2.gif" alt="">
+          <img src="assets/Type/A2.gif" alt="">
+          <img src="assets/Type/A4.gif" alt="">
+          <img src="assets/Type/GenType.png" alt="">
+          <img src="assets/Type/InteractiveType2.gif" alt="">
+          <img src="assets/Type/A.gif" alt="" width='100%'>
+          <h1><a href="https://twitter.com/TyphaineLeGales"><u>See more here</u></a></h1>
 
-          <img src="assets/Axidraw/ScanColumnBlackAndWhite.jpeg" width="110%"alt="">
-        </div>
-        <div class="break">
-          <img src="assets/Sorry.png" alt="" width='200%' >
-        </div>
       </div>
-
-      <div id="whoIsCounting" class="section">
-        <div class="showImg grid gridCounting">
-          <img style="grid-column: 3/span 2; grid-row:1/span 1" src="assets/WhoIsCounting/interface.png" alt="" width="90%">
-          <h1 style="grid-row: 2/span 1; grid-column:3/span 2; z-index:10; text-align:center"><a href="https://typhainelegales.github.io/WhosCounting/" target="_blank"> <strong><u>Go to site </u></strong></a></h1>
-          <div style="grid-column: 2/span 1; grid-row:3/span 1">
-            <img src="assets/WhoIsCounting/supermarket.gif" alt="" width="110%">
-          </div>
-          <div style="grid-column: 3/span 1; grid-row:4/span 1">
-            <img src="assets/WhoIsCounting/timeLapse.gif" alt="" width="110%">
-          </div>
-           <div style="grid-column: 2/span 1; grid-row:5/span 1">
-            <img src="assets/WhoIsCounting/LordOfTheRing.gif" alt="" width="110%">
-            <!-- <img src="assets/WhoIsCounting/linear.gif" alt="" width="50%"> -->
-          </div>
-          <!-- <p class="fr invisible" >N'hésitez pas à me contacter a : <a href="mailto:typhainethegales@gmail.com"><strong>typhainethegales@gmail.com</strong></a></p>
-          <p class="en" >Feel free to contact me at <a href="mailto:typhainethegales@gmail.com"><strong>typhainethegales@gmail.com</strong></a></p> -->
-        <div class="break">
-          <img src="assets/Sorry.png" alt="" width='300%' >
-        </div>
+      <div class="break">
+        <img src="assets/Sorry.png" alt="" width='80%' >
       </div>
     </div>
-
-      <div class="section" id="experiments">
-        <div class="showImg grid gridExperiments">
-
-            <img src="assets/Experiments/MarchedSphere.gif" alt="" width="50%">
-            <!-- <h1><a width="60%" href="https://www.shadertoy.com/view/WdySWd">See code on <u>shadertoy</u></a></h1> -->
-            <img width="50%" src="assets/Experiments/smashOrPass.gif">
-            <img width="50%" src="assets/Experiments/CA2D.gif">
-            <img width="50%" src="assets/Experiments/CA3D.gif">
-            <img width="50%" src="assets/Experiments/unityParticles.gif">
-             <img width="50%" src="assets/Experiments/unityCharacter.gif">
-
-            <img src="assets/Type/X1.gif" width="20%" alt="">
-            <img src="assets/Type/GenerativeH.png" width="20%" alt="">
-            <img src="assets/Type/H1.gif"width="20%" alt="">
-            <img src="assets/Type/kinecticType2.gif" width="20%" alt="">
-            <img src="assets/Type/A2.gif" alt="" width='20%'>
-            <img src="assets/Type/A4.gif" alt="" width='20%'>
-
-         <!--  <p class="floatingP en"> Moreover, in a time where where the flow of information is constantly growing, bringing it to a scale where it becomes hardly graspable, images take on a new role of <strong>re-introducing an emotional connection to information</strong>. Typography can become a vector for materialising sound or be data-driven to create new, meaningful, and interactive dynamic experiences.</p>
-          <p class="floatingP fr invisible"> Dans un contexte où le flux d'information grandit au point de le rendre difficilement saisissable, les contours du medium typographique peuvent se redessiner pour <strong>créer un nouveau vocabulaire graphique refletant la complexité et la nature des systèmes qui nous entourent </strong>. Cette approche permet notamment d'introduire dans une "grille" dynamique des notions telles que l'interactivité, la procéduralité du mouvement et la visualization de sons et/ou de datas afin d' <strong>introduire une connexion plus profonde à l'information</strong> .</p> -->
-       <!--    <img src="assets/Type/GenType.png" alt="" width='100%'>
-          <img src="assets/Type/InteractiveType2.gif" alt="" width='100%'> -->
-          <!-- <p class="floatingP en">One of the thing I explored the most was the introduction of <strong> procedural randomness </strong></p>
-          <p class="floatingP fr invisible">Un concept que qui m'intéresse beaucoup est celui du <strong>hasard controlé</strong> qui permet de générer une multitude de variations d'un même system.</p>
-          <img src="assets/Type/A.gif" alt="" width='100%'> -->
-
-        </div>
-        <div class="break">
-          <img src="assets/Sorry.png" alt="" width='80%' >
-        </div>
-      </div>
-
-
-
   </div>
    <!-- <script src="loadingScreen.js"></script> -->
   <script src="scroll.js"></script>

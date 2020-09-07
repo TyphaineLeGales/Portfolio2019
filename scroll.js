@@ -44,8 +44,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
    } else if(-imgSection[1].clientHeight < sections[1].offsetTop- window.scrollY) {
       nav(1, descriptions, buttons);
-      // descriptions[1].style.opacity = `${1 -(window.scrollY/imgSection[1].clientHeight)}`
-      // console.log(1-(window.scrollY/imgSection[1].clientHeight));
     } else if(-imgSection[2].clientHeight < sections[2].offsetTop- window.scrollY ){
       nav(2, descriptions, buttons);
     } else if (-imgSection[3].clientHeight <sections[3].offsetTop- window.scrollY){
@@ -58,15 +56,15 @@ document.addEventListener('DOMContentLoaded', function() {
       nav(6, descriptions, buttons);
     }
 
-    // var nom = document.getElementById('prenom');
-    // nom.style.opacity = `${(window.scrollY/imgSection[0].clientHeight)}`;
+    var nom = document.getElementById('prenom');
+    nom.style.opacity = `${(window.scrollY/imgSection[0].clientHeight)}`;
 
-    // if(window.scrollY < sections[0].clientHeight - sections[0].offsetTop) {
-    //   nom.style.display = "block";
+    if(window.scrollY < imgSection[0].clientHeight) {
+      nom.style.display = "block";
 
-    // } else {
-    //   nom.style.display = "none";
-    // }
+    } else {
+      nom.style.display = "none";
+    }
   });
 }, false);
 
