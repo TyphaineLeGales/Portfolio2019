@@ -491,6 +491,7 @@ li {
 .gridExperiments img {
   padding:1em;
   width:30%;
+  object-fit: cover;
 }
 #landing {
   display:flex;
